@@ -1,10 +1,15 @@
+header,
 nav {
+    background-color: var(--white);
     border-bottom: 2px solid var(--light-gray);
     display: flex;
     justify-content: center;
-    padding: 1rem;
     position: sticky;
     width: 100%;
+    z-index: 3;
+}
+
+nav {
     top: 5rem;
 }
 
@@ -14,5 +19,9 @@ nav {
     font-weight: 700;
     text-decoration: none;
     text-transform: uppercase;
-    padding: 0 1rem;
+    padding: 1rem;
+}
+
+.nav-link:hover {
+    background: var(--light-gray);
 }

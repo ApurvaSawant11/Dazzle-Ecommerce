@@ -3,6 +3,7 @@
 
 @import './css/header.css';
 @import './css/navbar.css';
+@import './css/loginSignup.css';
 
 * {
     box-sizing: border-box;
@@ -11,6 +12,7 @@
     letter-spacing: 1px;
 }
 
-body {
-    height: 300vh;
+.secondary-text {
+    color: var(--secondary);
+    font-weight: bold;
 }
