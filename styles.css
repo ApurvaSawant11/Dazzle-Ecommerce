@@ -1,10 +1,16 @@
 @import url("https://dazzle-ui-components.netlify.app/components/components.css");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css");
 
+@import './css/header.css';
 @import './css/navbar.css';
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    letter-spacing: 1px;
+}
+
+body {
+    height: 300vh;
 }

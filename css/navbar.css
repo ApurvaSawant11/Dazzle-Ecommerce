@@ -1,0 +1,18 @@
+nav {
+    border-bottom: 2px solid var(--light-gray);
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    position: sticky;
+    width: 100%;
+    top: 5rem;
+}
+
+.nav-link {
+    color: var(--primary);
+    font-size: small;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0 1rem;
+}
