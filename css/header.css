@@ -15,6 +15,7 @@
 }
 
 header {
+    border-bottom: 2px solid var(--light-gray);
     padding: 1rem 2rem;
     height: 5rem;
     top: 0;

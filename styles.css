@@ -12,7 +12,77 @@
     letter-spacing: 1px;
 }
 
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+}
+
 .secondary-text {
     color: var(--secondary);
     font-weight: bold;
+}
+
+main {
+    grid-area: main;
+    padding: 0;
+}
+
+.card-vertical {
+    border: 2px solid var(--light-gray);
+    margin: 1rem;
+    align-self: center;
+    justify-self: center;
+    min-width: 16rem;
+    max-width: 16rem;
+}
+
+.card-img-vertical {
+    height: 16rem;
+}
+
+.title {
+    text-transform: uppercase;
+}
+
+.card-button {
+    cursor: pointer;
+    background: transparent;
+    border: unset;
+    color: var(--secondary);
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 100%;
+    border-top: 2px solid var(--light-gray);
+    padding: 0.8rem 0;
+}
+
+.card-button:hover {
+    background: #e1fff7;
+    color: #313131;
+}
+
+.card-vertical {
+    position: relative;
+}
+
+.card-delete-icon {
+    cursor: pointer;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: #ffffff99;
+    border: 1.2px solid #d4d5d9;
+    border-radius: 50%;
+    padding: 6px;
+}
+
+.card-delete-icon:hover {
+    filter: brightness(85%);
+}
+
+.heading-text {
+    padding-top: 1rem;
 }
