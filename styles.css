@@ -5,6 +5,12 @@
 @import './css/navbar.css';
 @import './css/loginSignup.css';
 
+:root {
+    --discounted-price: #f53f3f;
+    --card-button-hover: #e1fff7;
+    --black: #313131;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -47,6 +53,11 @@ main {
     text-transform: uppercase;
 }
 
+.discountedPrice {
+    font-weight: normal;
+    color: var(--discounted-price);
+}
+
 .card-button {
     cursor: pointer;
     background: transparent;
@@ -60,8 +71,8 @@ main {
 }
 
 .card-button:hover {
-    background: #e1fff7;
-    color: #313131;
+    background: var(--card-button-hover);
+    color: var(--black);
 }
 
 .card-vertical {
