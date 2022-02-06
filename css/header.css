@@ -1,0 +1,93 @@
+.sub-header {
+    background: var(--primary);
+    color: var(--white);
+    padding: 0.3rem;
+}
+
+.offer-text>i {
+    padding: 0 1rem;
+}
+
+.offer-text {
+    border-right: 1px solid var(--light-gray);
+    padding-right: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+header {
+    padding: 1rem 2rem;
+    height: 5rem;
+    top: 0;
+}
+
+.header-section {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.header-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-right: 1rem;
+}
+
+.cera {
+    color: var(--primary);
+}
+
+.shop {
+    color: var(--secondary);
+}
+
+.header-search {
+    position: relative;
+    flex-grow: 1;
+    border: 2px solid var(--light-gray);
+    border-radius: 5px;
+    margin-right: 1rem;
+}
+
+.search-input {
+    border-radius: 5px;
+    border: unset;
+    font-size: 1rem;
+    padding: 0.5rem;
+    padding-left: 4rem;
+    width: 100%;
+    outline: none;
+}
+
+.search-btn-icon {
+    cursor: pointer;
+    position: absolute;
+    top: 0.75rem;
+    left: 1.4rem;
+    font-size: 1.1rem;
+    color: var(--primary);
+}
+
+.header-icon-link {
+    color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0.5rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.header-icon-text {
+    font-size: small;
+}
+
+.badge-value {
+    height: 1.2rem;
+    width: 1.2rem;
+    font-weight: 700;
+}

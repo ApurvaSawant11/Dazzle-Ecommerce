@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-    <link rel="stylesheet" href="./styles.css"> 
-    <title>Cerashop</title>
+    <link rel="stylesheet" href="/styles.css"> 
+    <title>Cerashop | Login</title>
 </head>
 <body>
     <div class="sub-header text-align-center">
@@ -16,7 +16,7 @@
     <header>
         <div class="header-section">
             <div class="header-logo">
-                <img src="./images/logo.svg" alt="dazzle Cerashop"/>
+                <img src="/images/logo.svg" alt="dazzle Cerashop"/>
                 <span class="cera">CERA</span>
                 <span class="shop">shop</span>
             </div>
@@ -29,7 +29,7 @@
             </div>
     
             <div class="header-icon">
-                <a class="header-icon-link" href="./pages/login.html">
+                <a class="header-icon-link" href="/pages/login.html">
                     <i class="fas fa-user-alt"></i>
                     <span class="header-icon-text">Login</span>
                 </a>
@@ -61,5 +61,27 @@
         <a href="#" class="nav-link">Gifts</a>
         <a href="#" class="nav-link">Brands</a>
     </nav>
+
+    <section class="login-container">
+        <div class="form-img">
+            <img src="/images/login-image2.JPG">
+            <span class="img-text"><h3>LOGIN</h3>Get access to our amazing offers and best selling products.</span>
+        </div>
+        <form class="login-form">
+            <div class="input-field">
+                <input class="input" type="text" required="">
+                <span class="bar"></span>
+                <label class="placeholder">Enter Email</label>
+            </div>
+            <div class="input-field">
+                <input class="input" type="password" required="">
+                <span class="bar"></span>
+                <label class="placeholder">Password</label>
+            </div>
+            <button class="button inverted-primary form-btn">Login as Guest</button>
+            <button class="button primary form-btn">Login</button>
+            <p class="text-align-center">New user? Create your account <a class="secondary-text" href="/pages/signup.html">here</a></p>
+        </form>
+    </section>
 </body>
 </html>
