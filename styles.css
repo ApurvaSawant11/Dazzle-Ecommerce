@@ -97,3 +97,7 @@ main {
 .heading-text {
     padding-top: 1rem;
 }
+
+.success {
+    font-weight: bold;
+}
