@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Cerashop</title>
+  </head>
+  <body>
+    <div class="sub-header text-center">
+      <span class="offer-text"
+        ><i class="fas fa-truck"></i>Free shipping on all orders</span
+      >
+      <span class="offer-code">Use code FREEDEL</span>
+    </div>
+    <header>
+      <div class="header-section">
+        <div class="header-logo">
+          <img src="/images/logo.svg" alt="dazzle Cerashop" />
+          <span class="cera">CERA</span>
+          <span class="shop">shop</span>
+        </div>
+      </div>
+
+      <div class="header-section">
+        <div class="header-search">
+          <input class="search-input" placeholder="What are you looking for?" />
+          <i class="fa fa-search search-btn-icon"></i>
+        </div>
+
+        <div class="header-icon">
+          <a class="header-icon-link" href="/pages/login.html">
+            <i class="fas fa-user-alt"></i>
+            <span class="header-icon-text">Login</span>
+          </a>
+        </div>
+        <div class="header-icon">
+          <a class="header-icon-link" href="/pages/wishlist.html">
+            <i class="fas fa-heart"></i>
+            <span class="header-icon-text">Wishlist</span>
+          </a>
+        </div>
+        <div class="header-icon">
+          <a class="header-icon-link" href="/pages/cart.html">
+            <i class="fas fa-shopping-cart badge badge-icon">
+              <span class="badge-value icon-badge secondary">4</span>
+            </i>
+            <span class="header-icon-text">Cart</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <nav>
+      <a href="#" class="nav-link">Decor</a>
+      <a href="#" class="nav-link">Dining</a>
+      <a href="#" class="nav-link">Kitchen</a>
+      <a href="#" class="nav-link">Gifts</a>
+      <a href="#" class="nav-link">Brands</a>
+    </nav>
+
+    <main class="table-container m-auto">
+      <div class="cart-header">
+        <span class="cart-header-item">Product</span>
+        <span class="cart-header-item text-center">Quantity</span>
+        <span class="cart-header-item text-right">Total</span>
+      </div>
+      <div class="cart-item">
+        <div class="card-horizontal">
+          <div class="card-info">
+            <img class="card-img-horizontal" src="/images/shallow-bowl.jpg" />
+            <div class="card-details">
+              <div class="title">Elegant round shallow bowl</div>
+              <div class="subtitle item-price">Rs. 849</div>
+            </div>
+          </div>
+        </div>
+        <div class="cart-actions text-center m-auto">
+          <div class="quantity-selector m-auto">
+            <button class="quantity-btn">-</button>
+            <input class="quantity-input" type="text" value="1" />
+            <button class="quantity-btn">+</button>
+          </div>
+          <button class="cart-button">Remove</button>
+          <button class="cart-button">Move To Wishlist</button>
+        </div>
+
+        <div class="final-price">Rs. 849</div>
+      </div>
+
+      <div class="cart-item">
+        <div class="card-horizontal">
+          <div class="card-info">
+            <div class="card-img">
+              <img class="card-img-horizontal" src="/images/shallow-bowl.jpg" />
+            </div>
+            <div class="card-details">
+              <div class="title">Elegant round shallow bowl</div>
+              <div class="subtitle item-price">Rs. 849</div>
+            </div>
+          </div>
+        </div>
+        <div class="cart-actions">
+          <div class="quantity-selector m-auto">
+            <button class="quantity-btn">-</button>
+            <input class="quantity-input" type="text" value="2" />
+            <button class="quantity-btn">+</button>
+          </div>
+          <button class="cart-button">Remove</button>
+          <button class="cart-button">Move To Wishlist</button>
+        </div>
+        <div class="final-price">Rs. 1698</div>
+      </div>
+
+      <div class="cart-footer">
+        <div class="cart-offers">
+          <div class="gift-wrapper flex-row m-2 ml-0">
+            <img class="gift-svg" src="/assets/NotoWrappedGift.svg" />
+            <div class="pl-1">
+              <div>Want to gift your loved ones?(Rs.30)</div>
+              <button class="plain-button secondary-text display-block">
+                Add Gift Wrap
+              </button>
+            </div>
+          </div>
+          <div class="coupon-wrapper flex-row items-center m-2 ml-0">
+            <img class="coupon-svg" src="/assets/PhTag.svg" />
+            <div class="input-field ml-0p5">
+              <input
+                class="input coupon-input"
+                type="text"
+                placeholder="Coupon Code"
+              />
+            </div>
+
+            <a class="button-link secondary-text ml-0p5 font-w-700">Apply</a>
+            <!-- <button class="button secondary">Apply</button> -->
+          </div>
+        </div>
+        <!-- <div class="empty-cart-cell"></div> -->
+        <div class="cart-recap">
+          <div>
+            <span class="cart-total">Cart Total:</span>
+          <span class="price-detail-value">Rs. 2,547</span>
+          </div>
+          <div>
+            <span>Coupon Discount: </span
+              ><span class="price-detail-value">Rs. 1,000</span>
+          </div>
+          <div>
+            <span>Convenience Fee:</span>
+          <span class="price-detail-value secondary-text">FREE</span>
+          </div>
+          <div>
+            <span class="font-w-700">Total Amount: </span
+              ><span class="price-detail-value">Rs. 1,547</span>
+          </div>
+          
+          
+          <!-- <div class="cart-tax">Prices are Inclusive Of Taxes. Free Shipping On Prepaid Orders.</div> -->
+          <button class="button primary mt-1">Checkout</button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

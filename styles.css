@@ -4,10 +4,11 @@
 @import './css/header.css';
 @import './css/navbar.css';
 @import './css/loginSignup.css';
+@import './css/cart.css';
 
 :root {
     --discounted-price: #f53f3f;
-    --card-button-hover: #e1fff7;
+    --card-button-hover: #e7fff9;
     --black: #313131;
 }
 
@@ -23,12 +24,7 @@
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     align-items: center;
     justify-content: center;
-    padding: 3rem;
-}
-
-.secondary-text {
-    color: var(--secondary);
-    font-weight: bold;
+    grid-gap: 1rem;
 }
 
 main {
@@ -37,20 +33,23 @@ main {
 }
 
 .card-vertical {
-    border: 2px solid var(--light-gray);
-    margin: 1rem;
     align-self: center;
     justify-self: center;
     min-width: 16rem;
     max-width: 16rem;
 }
 
+.card-vertical > .card-details {
+    height: 5.5rem;
+}
+
 .card-img-vertical {
-    height: 16rem;
+    height: 15rem;
 }
 
 .title {
     text-transform: uppercase;
+    font-weight: 500;
 }
 
 .discountedPrice {
@@ -58,16 +57,21 @@ main {
     color: var(--discounted-price);
 }
 
-.card-button {
+.plain-button {
     cursor: pointer;
     background: transparent;
     border: unset;
-    color: var(--secondary);
+    font-size: 1rem;
     font-weight: bold;
     text-transform: uppercase;
+}
+
+.card-button {
+    color: var(--secondary);
     width: 100%;
     border-top: 2px solid var(--light-gray);
-    padding: 0.8rem 0;
+    border-bottom: 2px solid var(--light-gray);
+    padding: 0.75rem 0;
 }
 
 .card-button:hover {
@@ -92,12 +96,4 @@ main {
 
 .card-delete-icon:hover {
     filter: brightness(85%);
-}
-
-.heading-text {
-    padding-top: 1rem;
-}
-
-.success {
-    font-weight: bold;
 }

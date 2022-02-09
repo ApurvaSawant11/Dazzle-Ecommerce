@@ -1,0 +1,143 @@
+.table-container {
+    display: table;
+    table-layout: auto;
+    border-spacing: 0 3rem;
+    width: 70%;
+}
+
+.cart-header {
+    display: table-header-group;
+}
+
+.cart-header-item {
+    display: table-cell;
+    border-bottom: 1px solid var(--light-gray);
+    text-transform: uppercase;
+}
+
+.cart-item {
+    display: table-row;
+}
+
+.card-horizontal {
+    min-width: 40rem;
+    max-width: 40rem;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.card-img-horizontal {
+    min-width: 15rem;
+    max-width: 15rem;
+    border-radius: 0;
+}
+
+
+.card-info {
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.card-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.25rem;
+}
+
+.cart-actions, .final-price {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.quantity-selector {
+    align-items: center;
+    display: flex;
+    border: 2px solid var(--light-gray);
+    width: max-content;
+    height: 3rem;
+}
+
+.quantity-btn {
+    border: unset;
+    background: transparent;
+    color: var(--dark-gray);
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.quantity-btn:hover {
+    color: var(--black);
+}
+
+.quantity-input {
+    background: transparent;
+    border: unset;
+    width: 2rem;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.cart-button {
+    border: unset;
+    background: transparent;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: underline;
+    margin: 0.5rem auto;
+    display: block;
+    white-space: nowrap;
+}
+
+.final-price {
+    text-align: right;
+    width: max-content;
+}
+
+.cart-footer {
+    display: table;
+}
+
+.gift-ribbon {
+    height: 5rem;
+    width: 0.5rem;
+    color: green;
+    padding: 1rem;
+}
+
+.cart-offers, .empty-cart-cell, .cart-recap {
+    display: table-cell;
+    border-top: 1px solid var(--light-gray);
+    vertical-align: middle;
+}
+
+.coupon-input{
+    text-transform: uppercase;
+    padding: 0 0.5rem;
+}
+
+.coupon-input:focus {
+    border-color: var(--secondary);
+}
+
+.cart-recap > span{
+    white-space: nowrap;
+}
+
+.display-block {
+    display: block;
+}
+
+.price-detail-value {
+    float: right;
+}
+
+.cart-recap {
+    min-width: 20rem;
+}
+
+.checkout-btn {
+    width: 100%;
+}
