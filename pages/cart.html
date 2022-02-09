@@ -66,9 +66,9 @@
 
     <main class="table-container m-auto">
       <div class="cart-header">
-        <span class="cart-header-item">Product</span>
-        <span class="cart-header-item text-center">Quantity</span>
-        <span class="cart-header-item text-right">Total</span>
+        <span class="cart-header-item pb-1">Product</span>
+        <span class="cart-header-item pb-1 text-center">Quantity</span>
+        <span class="cart-header-item pb-1 text-right">Total</span>
       </div>
       <div class="cart-item">
         <div class="card-horizontal">
@@ -77,6 +77,12 @@
             <div class="card-details">
               <div class="title">Elegant round shallow bowl</div>
               <div class="subtitle item-price">Rs. 849</div>
+              <div>
+                <button class="cart-button danger-text">Remove</button> |
+                <button class="cart-button secondary-text font-w-700">
+                  Move To Wishlist
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -86,11 +92,9 @@
             <input class="quantity-input" type="text" value="1" />
             <button class="quantity-btn">+</button>
           </div>
-          <button class="cart-button">Remove</button>
-          <button class="cart-button">Move To Wishlist</button>
         </div>
 
-        <div class="final-price">Rs. 849</div>
+        <div class="final-price text-right">Rs. 849</div>
       </div>
 
       <div class="cart-item">
@@ -102,6 +106,12 @@
             <div class="card-details">
               <div class="title">Elegant round shallow bowl</div>
               <div class="subtitle item-price">Rs. 849</div>
+              <div>
+                <button class="cart-button danger-text">Remove</button> |
+                <button class="cart-button secondary-text font-w-700">
+                  Move To Wishlist
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -111,61 +121,54 @@
             <input class="quantity-input" type="text" value="2" />
             <button class="quantity-btn">+</button>
           </div>
-          <button class="cart-button">Remove</button>
-          <button class="cart-button">Move To Wishlist</button>
         </div>
-        <div class="final-price">Rs. 1698</div>
-      </div>
-
-      <div class="cart-footer">
-        <div class="cart-offers">
-          <div class="gift-wrapper flex-row m-2 ml-0">
-            <img class="gift-svg" src="/assets/NotoWrappedGift.svg" />
-            <div class="pl-1">
-              <div>Want to gift your loved ones?(Rs.30)</div>
-              <button class="plain-button secondary-text display-block">
-                Add Gift Wrap
-              </button>
-            </div>
-          </div>
-          <div class="coupon-wrapper flex-row items-center m-2 ml-0">
-            <img class="coupon-svg" src="/assets/PhTag.svg" />
-            <div class="input-field ml-0p5">
-              <input
-                class="input coupon-input"
-                type="text"
-                placeholder="Coupon Code"
-              />
-            </div>
-
-            <a class="button-link secondary-text ml-0p5 font-w-700">Apply</a>
-            <!-- <button class="button secondary">Apply</button> -->
-          </div>
-        </div>
-        <!-- <div class="empty-cart-cell"></div> -->
-        <div class="cart-recap">
-          <div>
-            <span class="cart-total">Cart Total:</span>
-          <span class="price-detail-value">Rs. 2,547</span>
-          </div>
-          <div>
-            <span>Coupon Discount: </span
-              ><span class="price-detail-value">Rs. 1,000</span>
-          </div>
-          <div>
-            <span>Convenience Fee:</span>
-          <span class="price-detail-value secondary-text">FREE</span>
-          </div>
-          <div>
-            <span class="font-w-700">Total Amount: </span
-              ><span class="price-detail-value">Rs. 1,547</span>
-          </div>
-          
-          
-          <!-- <div class="cart-tax">Prices are Inclusive Of Taxes. Free Shipping On Prepaid Orders.</div> -->
-          <button class="button primary mt-1">Checkout</button>
-        </div>
+        <div class="final-price text-right">Rs. 1698</div>
       </div>
     </main>
+    <div class="cart-footer m-auto">
+      <div class="cart-offers">
+        <div class="gift-wrapper flex-row m-2 ml-0">
+          <img class="gift-svg" src="/assets/NotoWrappedGift.svg" />
+          <div class="pl-1">
+            <div>Want to gift your loved ones?(Rs.30)</div>
+            <button class="plain-button secondary-text display-block">
+              Add Gift Wrap
+            </button>
+          </div>
+        </div>
+        <div class="coupon-wrapper flex-row items-center m-2 ml-0">
+          <img class="coupon-svg" src="/assets/PhTag.svg" />
+          <div class="input-field ml-0p5">
+            <input
+              class="input coupon-input"
+              type="text"
+              placeholder="Coupon Code"
+            />
+            <a class="button-link secondary-text ml-0p5 font-w-700 coupon-btn"
+              >Apply</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="cart-recap">
+        <div>
+          <span class="cart-total">Cart Total:</span>
+          <span class="price-detail-value">Rs. 2,547</span>
+        </div>
+        <div>
+          <span>Coupon Discount: </span
+          ><span class="price-detail-value">Rs. 1,000</span>
+        </div>
+        <div>
+          <span>Convenience Fee:</span>
+          <span class="price-detail-value secondary-text">FREE</span>
+        </div>
+        <div class="font-w-700">
+          <span>Total Amount: </span
+          ><span class="price-detail-value">Rs. 1,547</span>
+        </div>
+        <button class="button primary mt-1 checkout-btn">Checkout</button>
+      </div>
+    </div>
   </body>
 </html>
