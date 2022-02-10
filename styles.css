@@ -8,8 +8,9 @@
 
 :root {
     --discounted-price: #f53f3f;
-    --card-button-hover: #e7fff9;
+    --card-button-hover: #f0fffb;
     --black: #313131;
+    --border-color: #dddddd;
 }
 
 * {
@@ -37,6 +38,11 @@ main {
     justify-self: center;
     min-width: 16rem;
     max-width: 16rem;
+    background: white;
+}
+
+.card-vertical:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, .15);
 }
 
 .card-vertical>.card-details {
@@ -69,13 +75,13 @@ main {
 .card-button {
     color: var(--secondary);
     width: 100%;
-    border-top: 2px solid var(--light-gray);
-    border-bottom: 2px solid var(--light-gray);
+    border-top: 2px solid var(--border-color);
+    border-bottom: 2px solid var(--border-color);
+    background: var(--card-button-hover);
     padding: 0.75rem 0;
 }
 
 .card-button:hover {
-    background: var(--card-button-hover);
     color: var(--black);
 }
 
@@ -100,4 +106,8 @@ main {
 
 .text-uppercase {
     text-transform: uppercase;
+}
+
+.text-decor-none{
+    text-decoration: none;
 }

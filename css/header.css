@@ -45,6 +45,13 @@ header {
     color: var(--secondary);
 }
 
+.header-home {
+    color: var(--primary);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+}   
+
 .header-search {
     position: relative;
     flex-grow: 1;
