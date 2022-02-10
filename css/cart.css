@@ -1,0 +1,140 @@
+.table-container,
+.cart-footer {
+    display: table;
+    table-layout: auto;
+    border-spacing: 0 3rem;
+    width: 70%;
+}
+
+.cart-header {
+    display: table-header-group;
+}
+
+.cart-header-item {
+    display: table-cell;
+    border-bottom: 1px solid var(--light-gray);
+    text-transform: uppercase;
+}
+
+.cart-item {
+    display: table-row;
+}
+
+.card-img-horizontal {
+    min-width: 15rem;
+    max-width: 15rem;
+    border-radius: 0;
+}
+
+.card-info {
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.card-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.25rem;
+}
+
+.quantity-selector {
+    align-items: center;
+    display: flex;
+    border: 2px solid var(--light-gray);
+    width: max-content;
+    height: 3rem;
+}
+
+.quantity-btn {
+    border: unset;
+    background: transparent;
+    color: var(--dark-gray);
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.quantity-btn:hover {
+    color: var(--black);
+}
+
+.quantity-input {
+    background: transparent;
+    border: unset;
+    color: var(--dark-gray);
+    width: 2rem;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.cart-button {
+    border: unset;
+    background: transparent;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: underline;
+    white-space: nowrap;
+    display: inline;
+}
+
+.card-horizontal,
+.cart-actions,
+.final-price,
+.cart-offers,
+.empty-cart-cell,
+.cart-recap {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.coupon-input {
+    text-transform: uppercase;
+    padding: 0 4rem 0 0.5rem;
+}
+
+.coupon-input:focus {
+    border-color: var(--secondary);
+}
+
+.coupon-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.final-price,
+.cart-recap>span {
+    white-space: nowrap;
+}
+
+.display-block {
+    display: block;
+}
+
+.price-detail-value {
+    float: right;
+}
+
+.checkout-btn {
+    width: 100%;
+}
+
+.cart-footer {
+    border-spacing: 0 1rem;
+    border-top: 2px solid var(--light-gray);
+}
+
+
+.cart-recap {
+    max-width: 12.5rem;
+}
+
+.coupon-wrapper>.input-field {
+    min-width: 23rem;
+}
+
+.cart-button.secondary-text {
+    text-decoration: none;
+}
