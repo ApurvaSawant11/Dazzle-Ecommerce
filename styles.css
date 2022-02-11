@@ -42,9 +42,9 @@ main {
     background: white;
 }
 
-.card-vertical:hover{
+/* .card-vertical:hover{
     box-shadow: 0 0 10px rgba(0, 0, 0, .15);
-}
+} */
 
 .card-vertical>.card-details {
     height: 5.5rem;
@@ -52,6 +52,7 @@ main {
 
 .card-img-vertical {
     height: 15rem;
+    border-radius: 0;
 }
 
 .title {

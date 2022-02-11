@@ -1,14 +1,109 @@
-/* .product-grid {
-    gri
-    grid-template-areas:
-        "sidebar main main main main"
-        "sidebar main main main main"
-        "sidebar main main main main"
-        "sidebar main main main main"
-        
-    ;
-} */
-
 .filter-bar {
-    width: 20rem;
+  width: 20rem;
+  position: sticky;
+  top: calc(120px + 1rem);
+  height: 100vh;
+  border-right: 1px solid var(--border-color);
+}
+
+.product-container {
+  border-top: 1px solid var(--border-color);
+  display: flex;
+}
+
+/* --------------price range---------------------- */
+.slider {
+  height: 5px;
+  border-radius: 5px;
+  background: var(--border-color);
+  position: relative;
+}
+
+.progress {
+  height: 5px;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  border-radius: 5px;
+  background: var(--secondary);
+}
+
+.range-group {
+  position: relative;
+}
+
+.range-group input {
+  position: absolute;
+  top: -1px;
+  height: 5px;
+  width: 100%;
+  background: none;
+  -webkit-appearance: none;
+  pointer-events: none;
+  z-index: 1;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  cursor: pointer;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  background: var(--secondary);
+  pointer-events: auto;
+  -webkit-appearance: none;
+}
+
+.input-group, .price-range__input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.price-range__input {
+  border: 1px solid var(--border-color);
+  padding: 8px 10px;
+}
+
+.input-field {
+  border: none;
+  outline: none;
+  text-align: end;
+}
+
+.input-field::-webkit-outer-spin-button,
+.input-field::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* --------------------checkbox & radio---------------- */
+.checkbox-container,
+.radio-container {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.checkbox-field,
+.radio-field {
+  width: 1.15rem;
+  height: 1.15rem;
+  position: relative;
+  top: 0.15rem;
+}
+
+/* ------------------- Wishlst Icon- -------------------- */
+.wishlist-btn {
+  color: var(--dark-gray);
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  border-radius: 50%;
+  padding: 6px;
+  font-size: 1.5rem;
+}
+
+.wishlisted, .wishlist-btn:hover {
+  font-weight: 800;
+  color: var(--danger);
 }

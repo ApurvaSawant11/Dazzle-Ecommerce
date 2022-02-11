@@ -67,27 +67,102 @@
 
     <main>
       <h4 class="text-center text-uppercase p-1">Products</h4>
-      <section class="flex-row p-3 pt-1">
-        <aside class="filter-bar pt-1">
+      <section class="product-container my-3">
+        <aside class="filter-bar p-2p5">
+          <h5 class="text-uppercase">Price</h5>
+          <div class="price-range mt-2">
+            <div class="range-group">
+              <input
+                type="range"
+                class="range min-range"
+                min="0"
+                max="19999"
+                value="0"
+              />
+              <input
+                type="range"
+                class="range max-range"
+                min="0"
+                max="19999"
+                value="19999"
+              />
+              <div class="slider">
+                <div class="progress"></div>
+              </div>
+            </div>
+            <div class="input-group mt-2">
+              <div class="price-range__input">
+                <span class="input-prefix">₹</span>
+                <input
+                  class="input-field min-field"
+                  type="number"
+                  min="0"
+                  max="19999"
+                  value="0"
+                />
+              </div>
+              <span class="price-range__delimiter">-</span>
+              <div class="price-range__input">
+                <span class="input-prefix">₹</span>
+                <input
+                  class="input-field max-field"
+                  type="number"
+                  value="19999"
+                  min="0"
+                  max="19999"
+                />
+              </div>
+            </div>
+          </div>
+
           <div>
-            <input type="radio" id="4" name="rating" value="above4" />
-            <label for="above4">4 stars & Above</label><br />
-            <input type="radio" id="3" name="rating" value="above3" />
-            <label for="above3">3 stars & Above</label><br />
-            <input type="radio" id="2" name="rating" value="above2" />
-            <label for="above2">2 stars & Above</label><br />
-            <input type="radio" id="1" name="rating" value="above1" />
-            <label for="above1">1 stars & Above</label><br />
+            <h5 class="text-uppercase mt-2p5">Categories</h5>
+            <label class="checkbox-container">
+              <input type="checkbox" class="checkbox-field" />
+              Cups
+            </label>
+            <label class="checkbox-container">
+              <input type="checkbox" class="checkbox-field" />
+              Bottle
+            </label>
+            <label class="checkbox-container">
+              <input type="checkbox" class="checkbox-field" />
+              Bowl
+            </label>
+            <label class="checkbox-container">
+              <input type="checkbox" class="checkbox-field" />
+              Plates
+            </label>
+          </div>
+
+          <h5 class="text-uppercase mt-2p5">Rating</h5>
+          <div>
+            <label class="radio-container">
+              <input type="radio" class="radio-field" checked="checked" name="radio" />
+              4 stars & Above
+            </label>
+            <label class="radio-container">
+              <input type="radio" class="radio-field" name="radio" />
+              3 stars & Above
+            </label>
+            <label class="radio-container">
+              <input type="radio" class="radio-field" name="radio" />
+              2 stars & Above
+            </label>
+            <label class="radio-container">
+              <input type="radio" class="radio-field" name="radio" />
+              1 stars & Above
+            </label>
           </div>
         </aside>
-        <div class="grid-container">
+        <div class="grid-container p-2">
           <div class="card-vertical m-1">
             <div class="badge">
               <img class="card-img-vertical" src="/images/shallow-bowl.jpg" />
               <span class="badge-text badge-on-left success px-0p5"
                 >Bestseller</span
               >
-              <span><i class="far fa-trash-alt card-delete-icon"></i></span>
+              <span><i class="far fa-heart wishlist-btn"></i></span>
             </div>
             <div class="card-details text-center">
               <div class="title">Rounded shallow bowl</div>
@@ -98,10 +173,10 @@
             </div>
             <button class="plain-button card-button mt-0p5">Add to Cart</button>
           </div>
-  
+
           <div class="card-vertical m-1">
             <img class="card-img-vertical" src="/images/white-plate1.jpg" />
-            <span><i class="far fa-trash-alt card-delete-icon"></i></span>
+            <span><i class="far fa-heart wishlist-btn  wishlisted"></i></span>
             <div class="card-details text-center">
               <div class="title">White Ceramic Plate</div>
               <div class="card-footer-vertical">
@@ -111,14 +186,14 @@
             </div>
             <button class="plain-button card-button mt-0p5">Add to Cart</button>
           </div>
-  
+
           <div class="card-vertical m-1">
             <div class="badge">
               <img class="card-img-vertical" src="/images/cups.jpg" />
               <span class="badge-text badge-on-left success px-0p5"
                 >Bestseller</span
               >
-              <span><i class="far fa-trash-alt card-delete-icon"></i></span>
+              <span><i class="far fa-heart wishlist-btn  wishlisted"></i></span>
             </div>
             <div class="card-details text-center">
               <div class="title">Set of Two Cups</div>
@@ -129,10 +204,10 @@
             </div>
             <button class="plain-button card-button mt-0p5">Add to Cart</button>
           </div>
-  
+
           <div class="card-vertical m-1">
             <img class="card-img-vertical" src="/images/shallow-bowl.jpg" />
-            <span><i class="far fa-trash-alt card-delete-icon"></i></span>
+            <span><i class="far fa-heart wishlist-btn"></i></span>
             <div class="card-details text-center">
               <div class="title">Rounded shallow bowl</div>
               <div class="card-footer-vertical">
@@ -142,10 +217,36 @@
             </div>
             <button class="plain-button card-button mt-0p5">Add to Cart</button>
           </div>
-  
+
           <div class="card-vertical m-1">
             <img class="card-img-vertical" src="/images/white-plate1.jpg" />
-            <span><i class="far fa-trash-alt card-delete-icon"></i></span>
+            <span><i class="far fa-heart wishlist-btn"></i></span>
+            <div class="card-details text-center">
+              <div class="title">White Ceramic Plate</div>
+              <div class="card-footer-vertical">
+                <span class="discountedPrice">Rs. 499</span>
+                <span class="originalPrice pl-0p5">Rs. 999</span>
+              </div>
+            </div>
+            <button class="plain-button card-button mt-0p5">Add to Cart</button>
+          </div>
+
+          <div class="card-vertical m-1">
+            <img class="card-img-vertical" src="/images/shallow-bowl.jpg" />
+            <span><i class="far fa-heart wishlist-btn"></i></span>
+            <div class="card-details text-center">
+              <div class="title">Rounded shallow bowl</div>
+              <div class="card-footer-vertical">
+                <span class="discountedPrice">Rs. 499</span>
+                <span class="originalPrice pl-0p5">Rs. 999</span>
+              </div>
+            </div>
+            <button class="plain-button card-button mt-0p5">Add to Cart</button>
+          </div>
+
+          <div class="card-vertical m-1">
+            <img class="card-img-vertical" src="/images/white-plate1.jpg" />
+            <span><i class="far fa-heart wishlist-btn"></i></span>
             <div class="card-details text-center">
               <div class="title">White Ceramic Plate</div>
               <div class="card-footer-vertical">
@@ -158,5 +259,7 @@
         </div>
       </section>
     </main>
+
+    <script src="/script.js"></script>
   </body>
 </html>
