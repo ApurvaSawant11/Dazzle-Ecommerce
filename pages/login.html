@@ -1,87 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-    <link rel="stylesheet" href="/styles.css"> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/styles.css" />
     <title>Cerashop | Login</title>
-</head>
-<body>
-    <div class="sub-header text-align-center">
-        <span class="offer-text"><i class="fas fa-truck"></i>Free shipping on all orders</span>
-        <span class="offer-code">Use code FREEDEL</span>
+  </head>
+  <body>
+    <div class="sub-header text-center">
+      <span class="offer-text"
+        ><i class="fas fa-truck"></i>Free shipping on all orders</span
+      >
+      <span class="offer-code">Use code FREEDEL</span>
     </div>
     <header>
-        <div class="header-section">
-            <div class="header-logo">
-                <img src="/images/logo.svg" alt="dazzle Cerashop"/>
-                <span class="cera">CERA</span>
-                <span class="shop">shop</span>
-            </div>
+      <div class="header-section">
+        <a href="/index.html" class="header-logo text-decor-none">
+          <img src="/images/logo.svg" alt="dazzle Cerashop" />
+          <span class="cera">CERA</span>
+          <span class="shop">shop</span>
+        </a>
+        <a href="/index.html" class="header-home ml-1">Home</a>
+      </div>
+
+      <div class="header-section">
+        <div class="header-search">
+          <input class="search-input" placeholder="What are you looking for?" />
+          <i class="fa fa-search search-btn-icon"></i>
         </div>
 
-        <div class="header-section">
-            <div class="header-search">
-                <input class="search-input" placeholder="What are you looking for?"/>
-                <i class="fa fa-search search-btn-icon"></i>
-            </div>
-    
-            <div class="header-icon">
-                <a class="header-icon-link" href="/pages/login.html">
-                    <i class="fas fa-user-alt"></i>
-                    <span class="header-icon-text">Login</span>
-                </a>
-            </div> 
-            <div class="header-icon">
-                <a class="header-icon-link" href="/pages/wishlist.html">
-                    <i class="fas fa-heart badge badge-icon">
-                        <span class="badge-value icon-badge secondary">0</span>
-                    </i>
-                    <span class="header-icon-text">Wishlist</span>
-                </a>
-                
-            </div>
-            <div class="header-icon">
-                <a class="header-icon-link" href="/pages/cart.html">
-                    <i class="fas fa-shopping-cart badge badge-icon">
-                        <span class="badge-value icon-badge secondary">0</span>
-                    </i>
-                    <span class="header-icon-text">Cart</span>
-                </a>  
-            </div>
-        </div>        
+        <div class="header-icon">
+          <a class="header-icon-link" href="/pages/login.html">
+            <i class="fas fa-user-alt"></i>
+            <span class="header-icon-text">Login</span>
+          </a>
+        </div>
+        <div class="header-icon">
+          <a class="header-icon-link" href="/pages/wishlist.html">
+            <i class="fas fa-heart"></i>
+            <span class="header-icon-text">Wishlist</span>
+          </a>
+        </div>
+        <div class="header-icon">
+          <a class="header-icon-link" href="/pages/cart.html">
+            <i class="fas fa-shopping-cart badge badge-icon">
+              <span class="badge-value icon-badge secondary">2</span>
+            </i>
+            <span class="header-icon-text">Cart</span>
+          </a>
+        </div>
+      </div>
     </header>
 
     <nav>
-        <a href="#" class="nav-link">Decor</a>
-        <a href="#" class="nav-link">Dining</a>
-        <a href="#" class="nav-link">Kitchen</a>
-        <a href="#" class="nav-link">Gifts</a>
-        <a href="#" class="nav-link">Brands</a>
+      <a href="/pages/product.html" class="nav-link">Decor</a>
+      <a href="/pages/product.html" class="nav-link">Dining</a>
+      <a href="/pages/product.html" class="nav-link">Kitchen</a>
+      <a href="/pages/product.html" class="nav-link">Gifts</a>
+      <a href="/pages/product.html" class="nav-link">Brands</a>
     </nav>
 
     <section class="login-container">
-        <div class="form-img">
-            <img src="/images/login-image2.JPG">
-            <span class="img-text"><h3>LOGIN</h3>Get access to our amazing offers and best selling products.</span>
+      <div class="form-img">
+        <img src="/images/login-image2.JPG" />
+        <span class="img-text"
+          ><h3>LOGIN</h3>
+          Get access to our amazing offers and best selling products.</span
+        >
+      </div>
+      <form class="login-form p-2p5 pt-0">
+        <div class="input-field mb-2">
+          <input class="input" type="text" required="" />
+          <span class="bar"></span>
+          <label class="placeholder">Enter Email</label>
         </div>
-        <form class="login-form">
-            <div class="input-field">
-                <input class="input" type="text" required="">
-                <span class="bar"></span>
-                <label class="placeholder">Enter Email</label>
-            </div>
-            <div class="input-field">
-                <input class="input" type="password" required="">
-                <span class="bar"></span>
-                <label class="placeholder">Password</label>
-            </div>
-            <button class="button inverted-primary form-btn">Login as Guest</button>
-            <button class="button primary form-btn">Login</button>
-            <p class="text-align-center">New user? Create your account <a class="secondary-text" href="/pages/signup.html">here</a></p>
-        </form>
+        <div class="input-field mb-2">
+          <input class="input" type="password" required="" />
+          <span class="bar"></span>
+          <label class="placeholder">Password</label>
+        </div>
+        <p class="mb-1">
+          <small
+            >By continuing, you agree to Dazzle Cerashop's
+            <span class="secondary-text font-w-700">Terms of use</span> and
+            <span class="secondary-text font-w-700"
+              >Privacy Policy.</span
+            ></small
+          >
+        </p>
+        <button class="button inverted-primary form-btn mb-1">
+          Login as Guest
+        </button>
+        <button class="button primary form-btn mb-1">Login</button>
+        <p class="text-center">
+          New user? Create your account
+          <a class="secondary-text font-w-700" href="/pages/signup.html"
+            >here</a
+          >
+        </p>
+      </form>
     </section>
-</body>
+  </body>
 </html>

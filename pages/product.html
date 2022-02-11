@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Cerashop</title>
+  </head>
+  <body>
+    <div class="sub-header text-center">
+      <span class="offer-text"
+        ><i class="fas fa-truck"></i>Free shipping on all orders</span
+      >
+      <span class="offer-code">Use code FREEDEL</span>
+    </div>
+    <header>
+      <div class="header-section">
+        <a href="/index.html" class="header-logo text-decor-none">
+          <img src="/images/logo.svg" alt="dazzle Cerashop" />
+          <span class="cera">CERA</span>
+          <span class="shop">shop</span>
+        </a>
+        <a href="/index.html" class="header-home ml-1">Home</a>
+      </div>
+
+      <div class="header-section">
+        <div class="header-search">
+          <input class="search-input" placeholder="What are you looking for?" />
+          <i class="fa fa-search search-btn-icon"></i>
+        </div>
+
+        <div class="header-icon">
+          <a class="header-icon-link" href="/pages/login.html">
+            <i class="fas fa-user-alt"></i>
+            <span class="header-icon-text">Login</span>
+          </a>
+        </div>
+        <div class="header-icon">
+          <a class="header-icon-link" href="/pages/wishlist.html">
+            <i class="fas fa-heart"></i>
+            <span class="header-icon-text">Wishlist</span>
+          </a>
+        </div>
+        <div class="header-icon">
+          <a class="header-icon-link" href="/pages/cart.html">
+            <i class="fas fa-shopping-cart badge badge-icon">
+              <span class="badge-value icon-badge secondary">2</span>
+            </i>
+            <span class="header-icon-text">Cart</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <nav>
+      <a href="/pages/product.html" class="nav-link">Decor</a>
+      <a href="/pages/product.html" class="nav-link">Dining</a>
+      <a href="/pages/product.html" class="nav-link">Kitchen</a>
+      <a href="/pages/product.html" class="nav-link">Gifts</a>
+      <a href="/pages/product.html" class="nav-link">Brands</a>
+    </nav>
+
+    <main>
+      <h4 class="text-center text-uppercase p-1">Products</h4>
+      <section class="product-container my-3">
+        <aside class="filter-bar p-2p5">
+          <h5 class="text-uppercase">Price</h5>
+          <div class="price-range mt-2">
+            <div class="range-group">
+              <input
+                type="range"
+                class="range min-range"
+                min="0"
+                max="19999"
+                value="0"
+              />
+              <input
+                type="range"
+                class="range max-range"
+                min="0"
+                max="19999"
+                value="19999"
+              />
+              <div class="slider">
+                <div class="progress"></div>
+              </div>
+            </div>
+            <div class="input-group mt-2">
+              <div class="price-range__input">
+                <span class="input-prefix">₹</span>
+                <input
+                  class="input-field min-field"
+                  type="number"
+                  min="0"
+                  max="19999"
+                  value="0"
+                />
+              </div>
+              <span class="price-range__delimiter">-</span>
+              <div class="price-range__input">
+                <span class="input-prefix">₹</span>
+                <input
+                  class="input-field max-field"
+                  type="number"
+                  value="19999"
+                  min="0"
+                  max="19999"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h5 class="text-uppercase mt-2p5">Categories</h5>
+            <label class="checkbox-container">
+              <input type="checkbox" class="checkbox-field" />
+              Cups
+            </label>
+            <label class="checkbox-container">
+              <input type="checkbox" class="checkbox-field" />
+              Bottle
+            </label>
+            <label class="checkbox-container">
+              <input type="checkbox" class="checkbox-field" />
+              Bowl
+            </label>
+            <label class="checkbox-container">
+              <input type="checkbox" class="checkbox-field" />
+              Plates
+            </label>
+          </div>
+
+          <h5 class="text-uppercase mt-2p5">Rating</h5>
+          <div>
+            <label class="radio-container">
+              <input type="radio" class="radio-field" checked="checked" name="radio" />
+              4 stars & Above
+            </label>
+            <label class="radio-container">
+              <input type="radio" class="radio-field" name="radio" />
+              3 stars & Above
+            </label>
+            <label class="radio-container">
+              <input type="radio" class="radio-field" name="radio" />
+              2 stars & Above
+            </label>
+            <label class="radio-container">
+              <input type="radio" class="radio-field" name="radio" />
+              1 stars & Above
+            </label>
+          </div>
+        </aside>
+        <div class="grid-container p-2">
+          <div class="card-vertical m-1">
+            <div class="badge">
+              <img class="card-img-vertical" src="/images/shallow-bowl.jpg" />
+              <span class="badge-text badge-on-left success px-0p5"
+                >Bestseller</span
+              >
+              <span><i class="far fa-heart wishlist-btn"></i></span>
+            </div>
+            <div class="card-details text-center">
+              <div class="title">Rounded shallow bowl</div>
+              <div class="card-footer-vertical">
+                <span class="discountedPrice">Rs. 499</span>
+                <span class="originalPrice pl-0p5">Rs. 999</span>
+              </div>
+            </div>
+            <button class="plain-button card-button mt-0p5">Add to Cart</button>
+          </div>
+
+          <div class="card-vertical m-1">
+            <img class="card-img-vertical" src="/images/white-plate1.jpg" />
+            <span><i class="far fa-heart wishlist-btn  wishlisted"></i></span>
+            <div class="card-details text-center">
+              <div class="title">White Ceramic Plate</div>
+              <div class="card-footer-vertical">
+                <span class="discountedPrice">Rs. 499</span>
+                <span class="originalPrice pl-0p5">Rs. 999</span>
+              </div>
+            </div>
+            <button class="plain-button card-button mt-0p5">Add to Cart</button>
+          </div>
+
+          <div class="card-vertical m-1">
+            <div class="badge">
+              <img class="card-img-vertical" src="/images/cups.jpg" />
+              <span class="badge-text badge-on-left success px-0p5"
+                >Bestseller</span
+              >
+              <span><i class="far fa-heart wishlist-btn  wishlisted"></i></span>
+            </div>
+            <div class="card-details text-center">
+              <div class="title">Set of Two Cups</div>
+              <div class="card-footer-vertical">
+                <span class="discountedPrice">Rs. 499</span>
+                <span class="originalPrice pl-0p5">Rs. 999</span>
+              </div>
+            </div>
+            <button class="plain-button card-button mt-0p5">Add to Cart</button>
+          </div>
+
+          <div class="card-vertical m-1">
+            <img class="card-img-vertical" src="/images/shallow-bowl.jpg" />
+            <span><i class="far fa-heart wishlist-btn"></i></span>
+            <div class="card-details text-center">
+              <div class="title">Rounded shallow bowl</div>
+              <div class="card-footer-vertical">
+                <span class="discountedPrice">Rs. 499</span>
+                <span class="originalPrice pl-0p5">Rs. 999</span>
+              </div>
+            </div>
+            <button class="plain-button card-button mt-0p5">Add to Cart</button>
+          </div>
+
+          <div class="card-vertical m-1">
+            <img class="card-img-vertical" src="/images/white-plate1.jpg" />
+            <span><i class="far fa-heart wishlist-btn"></i></span>
+            <div class="card-details text-center">
+              <div class="title">White Ceramic Plate</div>
+              <div class="card-footer-vertical">
+                <span class="discountedPrice">Rs. 499</span>
+                <span class="originalPrice pl-0p5">Rs. 999</span>
+              </div>
+            </div>
+            <button class="plain-button card-button mt-0p5">Add to Cart</button>
+          </div>
+
+          <div class="card-vertical m-1">
+            <img class="card-img-vertical" src="/images/shallow-bowl.jpg" />
+            <span><i class="far fa-heart wishlist-btn"></i></span>
+            <div class="card-details text-center">
+              <div class="title">Rounded shallow bowl</div>
+              <div class="card-footer-vertical">
+                <span class="discountedPrice">Rs. 499</span>
+                <span class="originalPrice pl-0p5">Rs. 999</span>
+              </div>
+            </div>
+            <button class="plain-button card-button mt-0p5">Add to Cart</button>
+          </div>
+
+          <div class="card-vertical m-1">
+            <img class="card-img-vertical" src="/images/white-plate1.jpg" />
+            <span><i class="far fa-heart wishlist-btn"></i></span>
+            <div class="card-details text-center">
+              <div class="title">White Ceramic Plate</div>
+              <div class="card-footer-vertical">
+                <span class="discountedPrice">Rs. 499</span>
+                <span class="originalPrice pl-0p5">Rs. 999</span>
+              </div>
+            </div>
+            <button class="plain-button card-button mt-0p5">Add to Cart</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
