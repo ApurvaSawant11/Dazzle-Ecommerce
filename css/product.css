@@ -91,7 +91,7 @@ input[type="range"]::-webkit-slider-thumb {
   top: 0.15rem;
 }
 
-/* ------------------- Wishlst Icon- -------------------- */
+/* --------------------Wishlist Icon--------------------- */
 .wishlist-btn {
   color: var(--dark-gray);
   cursor: pointer;
