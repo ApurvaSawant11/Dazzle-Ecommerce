@@ -21,8 +21,7 @@
 }
 
 .card-img-horizontal {
-    min-width: 15rem;
-    max-width: 15rem;
+    width: 13.5rem;
     border-radius: 0;
 }
 
