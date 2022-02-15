@@ -24,11 +24,9 @@
   position: absolute;
   top: 48%;
   width: auto;
-  margin-top: -23px;
-  padding: 17px;
+  margin-top: -1rem;
+  padding: 1rem;
   color: var(--dark-black);
-  font-weight: bold;
-  font-size: 19px;
   transition: 0.4s ease;
   border-radius: 0 5px 5px 0;
   user-select: none;
