@@ -3,15 +3,16 @@
 
 @import './css/header.css';
 @import './css/navbar.css';
+@import './css/home.css';
 @import './css/loginSignup.css';
 @import './css/cart.css';
 @import './css/product.css';
 
 :root {
+    --primary:#000;
     --discounted-price: #f53f3f;
     --card-button-hover: #f0fffb;
-    --black: #313131;
-    --border-color: #dddddd;
+    --opacity-50:rgba(0, 0, 0, 0.26);
 }
 
 * {
@@ -39,12 +40,8 @@ main {
     justify-self: center;
     min-width: 16rem;
     max-width: 16rem;
-    background: white;
+    background: var(--white-color);
 }
-
-/* .card-vertical:hover{
-    box-shadow: 0 0 10px rgba(0, 0, 0, .15);
-} */
 
 .card-vertical>.card-details {
     height: 5.5rem;
@@ -75,20 +72,17 @@ main {
 }
 
 .card-button {
-    color: var(--secondary);
+    color: var(--dark-black);
     width: 100%;
     border-top: 2px solid var(--border-color);
     border-bottom: 2px solid var(--border-color);
-    background: var(--card-button-hover);
+    background: var(--light-gray);
     padding: 0.75rem 0;
 }
 
 .card-button:hover {
-    color: var(--black);
-}
-
-.card-vertical {
-    position: relative;
+    background: var(--light-black);
+    color: var(--white-color);
 }
 
 .card-delete-icon {
@@ -111,5 +105,31 @@ main {
 }
 
 .text-decor-none{
+    text-decoration: none;
+}
+
+.card-img-horizontal {
+    min-width: 13.5rem;
+    max-width: 13.5rem;
+}
+
+/* -----------------footer------------------ */
+
+footer {
+    justify-content: space-around;
+    margin-top: 4rem;
+}
+
+.links {
+    list-style: none;
+}
+
+.links>li{
+    padding: 4px 0;
+    font-size: 1.1rem;
+}
+
+.link {
+    color: var(--light-black);
     text-decoration: none;
 }

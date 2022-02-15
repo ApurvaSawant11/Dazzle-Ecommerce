@@ -13,9 +13,9 @@
   </head>
   <body>
     <div class="sub-header text-center">
-      <span class="offer-text"
-        ><i class="fas fa-truck"></i>Free shipping on all orders</span
-      >
+      <span class="offer-text">
+        <i class="fas fa-truck"></i>Free shipping on all orders
+      </span>
       <span class="offer-code">Use code FREEDEL</span>
     </div>
     <header>
@@ -64,5 +64,214 @@
       <a href="/pages/product.html" class="nav-link">Gifts</a>
       <a href="/pages/product.html" class="nav-link">Brands</a>
     </nav>
+
+    <main>
+      <section>
+        <div class="carousel-container fade">
+          <div class="container fade">
+            <img class="carousel-img" src="/images/carousel-1.jpg" />
+          </div>
+
+          <div class="container fade">
+            <img class="carousel-img" src="/images/carousel-3.jpg" />
+          </div>
+
+          <div class="container">
+            <img class="carousel-img" src="/images/carousel-4.jpg" />
+          </div>
+
+          <div class="container">
+            <img class="carousel-img" src="/images/carousel-5.jpg" />
+          </div>
+
+          <a class="left" onclick="moveSlide(-1)">
+            <i class="fas fa-angle-left text-xl" aria-hidden="true"></i>
+          </a>
+          <a class="right" onclick="moveSlide(1)">
+            <i class="fas fa-angle-right text-xl" aria-hidden="true"></i>
+          </a>
+        </div>
+        <br />
+
+        <div class="text-center">
+          <span class="dots" onclick="currentSlide(1)"></span>
+          <span class="dots" onclick="currentSlide(2)"></span>
+          <span class="dots" onclick="currentSlide(3)"></span>
+          <span class="dots" onclick="currentSlide(4)"></span>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="text-center my-2 py-2">Featured Categories</h2>
+        <div class="category wrap gap-2 my-2">
+          <div class="card-vertical category-item">
+            <span class="category-header mt-1p5">CUPS</span>
+            <img
+              class="card-img-vertical"
+              src="/images/blue-cup-black-bg.jpg"
+            />
+            <span class="overlay">
+              <a href="/pages/product.html" class="button button-anchor">View</a>
+            </span>
+          </div>
+          <div class="card-vertical category-item">
+            <span class="category-header mt-1p5">Fancy Bowls</span>
+            <img class="card-img-vertical" src="/images/fancy-bowls.jpg" />
+            <span class="overlay">
+              <a href="/pages/product.html" class="button button-anchor">View</a>
+            </span>
+          </div>
+          <div class="card-vertical category-item">
+            <span class="category-header mt-1p5">Plates</span>
+            <img
+              class="card-img-vertical"
+              src="/images/black-donut-plate.jpg"
+            />
+            <span class="overlay">
+              <a href="/pages/product.html" class="button button-anchor">View</a>
+            </span>
+          </div>
+          <div class="card-vertical category-item">
+            <span class="category-header mt-1p5">Gifts</span>
+            <img class="card-img-vertical" src="/images/gifts.jpg" />
+            <span class="overlay">
+              <a href="/pages/product.html" class="button button-anchor">View</a>
+            </span>
+          </div>
+          <div class="card-vertical category-item">
+            <span class="category-header mt-1p5">Planters</span>
+            <img class="card-img-vertical" src="/images/pots.jpg" />
+            <span class="overlay">
+              <a href="/pages/product.html" class="button button-anchor">View</a>
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-2p5">
+        <h3 class="text-center p-3">Combo Offers</h3>
+        <div class="value-priced flex-row wrap gap-1">
+          <div class="card-vertical m-1">
+            <div class="badge">
+              <img
+                class="card-img-vertical img-responsive"
+                src="/images/combo-set-3.jpg"
+              />
+              <span class="badge-text badge-on-left success px-0p5">Bestseller</span>
+            </div>
+            <div class="card-details text-center">
+              <div class="title">Micheilin Set of 7 Plates</div>
+              <div class="card-footer-vertical">
+                <span class="discountedPrice">Rs. 499</span>
+                <span class="originalPrice pl-0p5">Rs. 999</span>
+              </div>
+            </div>
+            <button class="plain-button card-button mt-0p5">Add to Cart</button>
+          </div>
+
+          <div class="card-vertical m-1">
+            <div class="badge">
+              <img
+                class="card-img-vertical img-responsive"
+                src="/images/combo-set-4.jpg"
+              />
+              <span class="badge-text badge-on-left success px-0p5">Bestseller</span>
+            </div>
+            <div class="card-details text-center">
+              <div class="title">Valiant Set of 6 Plates</div>
+              <div class="card-footer-vertical">
+                <span class="discountedPrice">Rs. 499</span>
+                <span class="originalPrice pl-0p5">Rs. 999</span>
+              </div>
+            </div>
+            <button class="plain-button card-button mt-0p5">Add to Cart</button>
+          </div>
+
+          <div class="card-vertical m-1">
+            <div class="badge">
+              <img
+                class="card-img-vertical img-responsive"
+                src="/images/combo-set-2.jpg"
+              />
+              <span class="badge-text badge-on-left success px-0p5">Bestseller</span>
+            </div>
+            <div class="card-details text-center">
+              <div class="title">Bolton Planters</div>
+              <div class="card-footer-vertical">
+                <span class="discountedPrice">Rs. 499</span>
+                <span class="originalPrice pl-0p5">Rs. 999</span>
+              </div>
+            </div>
+            <button class="plain-button card-button mt-0p5">Add to Cart</button>
+          </div>
+
+          <div class="card-vertical m-1">
+            <div class="badge">
+              <img
+                class="card-img-vertical img-responsive"
+                src="/images/fancy-bowls.jpg"
+              />
+              <span class="badge-text badge-on-left success px-0p5">Bestseller</span>
+            </div>
+            <div class="card-details text-center">
+              <div class="title">Taisia Bowls Set of 3</div>
+              <div class="card-footer-vertical">
+                <span class="discountedPrice">Rs. 499</span>
+                <span class="originalPrice pl-0p5">Rs. 999</span>
+              </div>
+            </div>
+            <button class="plain-button card-button mt-0p5">Add to Cart</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="basic-bg flex-row items-center p-1">
+      <div class="footer-item footer-links">
+        <h5 class="text-uppercase underline">Categories</h5>
+        <ul class="links">
+          <li><a href="#" class="link">Bowls</a></li>
+          <li><a href="#" class="link">Cups</a></li>
+          <li><a href="#" class="link">Plates</a></li>
+          <li><a href="#" class="link">Planters</a></li>
+          <li><a href="#" class="link">Gifts</a></li>
+        </ul>
+      </div>
+      <div class="footer-item footer-links">
+        <h5 class="text-uppercase underline">Account</h5>
+        <ul class="links">
+          <li><a href="#" class="link">My Account</a></li>
+          <li><a href="#" class="link">Wishlist</a></li>
+          <li><a href="#" class="link">Cart</a></li>
+          <li><a href="#" class="link">Track Order</a></li>
+          <li><a href="#" class="link">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="flex-column items-center">
+        <a href="/index.html" class="header-logo text-decor-none">
+          <img src="/images/logo.svg" alt="dazzle Cerashop" />
+          <span class="cera">CERA</span>
+          <span class="shop">shop</span>
+        </a>
+        <p class="m-0 mt-1">© 2022, All rights reserved</p>
+        <p>
+          Made with <i class="fas fa-heart" aria-hidden="true"></i> by Apurva
+          Sawant
+        </p>
+        <div>
+          <a class="link m-1" href="https://github.com/ApuvaSawant11"
+            ><i class="fab fa-github" aria-hidden="true"></i
+          ></a>
+          <a class="link m-1" href="https://twitter.com/apurvasawant11"
+            ><i class="fab fa-twitter" aria-hidden="true"></i
+          ></a>
+          <a class="link m-1" href="https://www.linkedin.com/in/apurvasawant11"
+            ><i class="fab fa-linkedin" aria-hidden="true"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/carousel.js"></script>
   </body>
 </html>

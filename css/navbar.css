@@ -1,6 +1,6 @@
 header,
 nav {
-    background-color: var(--white);
+    background-color: var(--white-color);
     display: flex;
     justify-content: center;
     position: sticky;
