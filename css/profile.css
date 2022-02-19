@@ -1,0 +1,47 @@
+aside .button-link {
+    text-transform: capitalize;
+    color: var(--dark-gray);
+}
+
+aside .active {
+    color: var(--secondary);
+    font-weight: 700;
+}
+
+.profile-details tr {
+    height: 2.5rem;
+}
+
+.profile-details td {
+    width: 10rem;
+}
+
+.logout-btn {
+    width: 100%;
+}
+
+.profile-section,
+.address-section .card-horizontal {
+    min-width: 35rem;
+}
+
+.action-buttons,
+.address-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.edit-btn,
+.remove-btn {
+    width: 50%;
+    text-align: center;
+}
+
+.address-section {
+    display: none;
+}
+
+.address-header {
+    display: flex;
+    justify-content: space-between;
+}

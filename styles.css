@@ -7,12 +7,13 @@
 @import './css/loginSignup.css';
 @import './css/cart.css';
 @import './css/product.css';
+@import './css/profile.css';
 
 :root {
-    --primary:#000;
+    --primary: #252525;
     --discounted-price: #f53f3f;
     --card-button-hover: #f0fffb;
-    --opacity-50:rgba(0, 0, 0, 0.26);
+    --opacity-50: rgba(0, 0, 0, 0.26);
 }
 
 * {
@@ -35,21 +36,22 @@ main {
     padding: 0;
 }
 
+.myhamburger {
+    display: none;
+}
+
 .card-vertical {
     align-self: center;
     justify-self: center;
-    min-width: 16rem;
-    max-width: 16rem;
     background: var(--white-color);
+}
+
+.card-img-vertical {
+    border-radius: 0;
 }
 
 .card-vertical>.card-details {
     height: 5.5rem;
-}
-
-.card-img-vertical {
-    height: 15rem;
-    border-radius: 0;
 }
 
 .title {
@@ -62,26 +64,15 @@ main {
     color: var(--discounted-price);
 }
 
-.plain-button {
-    cursor: pointer;
-    background: transparent;
-    border: unset;
-    font-size: 1rem;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
 .card-button {
     color: var(--dark-black);
-    width: 100%;
-    border-top: 2px solid var(--border-color);
     border-bottom: 2px solid var(--border-color);
     background: var(--light-gray);
-    padding: 0.75rem 0;
+    border-radius: 0;
 }
 
 .card-button:hover {
-    background: var(--light-black);
+    background: var(--primary);
     color: var(--white-color);
 }
 
@@ -100,12 +91,12 @@ main {
     filter: brightness(85%);
 }
 
-.text-uppercase {
-    text-transform: uppercase;
+.radius-0 {
+    border-radius: 0;
 }
 
-.text-decor-none{
-    text-decoration: none;
+.text-uppercase {
+    text-transform: uppercase;
 }
 
 /* -----------------footer------------------ */
@@ -115,16 +106,32 @@ footer {
     margin-top: 4rem;
 }
 
+.footer-logo {
+    align-self: center
+}
+
 .links {
     list-style: none;
 }
 
-.links>li{
+.links>li {
     padding: 4px 0;
-    font-size: 1.1rem;
 }
 
 .link {
     color: var(--light-black);
     text-decoration: none;
+}
+
+
+@media screen and (max-width: 720px) {
+    .myhamburger {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .sub-navigation {
+        display: none;
+    }
 }
