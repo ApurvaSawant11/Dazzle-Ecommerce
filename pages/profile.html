@@ -18,44 +18,61 @@
       >
       <span class="offer-code">Use code FREEDEL</span>
     </div>
-    <header>
-      <div class="header-section">
-        <a href="/index.html" class="header-logo no-underline">
-          <img src="/images/logo.svg" alt="dazzle Cerashop" />
-          <span class="cera">CERA</span>
-          <span class="shop">shop</span>
+
+    <header class="header flex-row wrap">
+      <div class="navbar-section">
+        <i class="fas fa-bars fa-lg primary-text myhamburger"></i>
+
+        <a href="/index.html" class="navbar-logo no-underline">
+          <img class="logo-img" src="/images/logo.svg" alt="dazzle UI" />
+          <span class="primary-text">Cera</span>
+          <span class="secondary-text">Shop</span>
         </a>
-        <a href="/index.html" class="header-home ml-1">Home</a>
+
+        <a href="/index.html" class="navbar-link ml-2">Home</a>
+        <a href="/pages/product.html" class="navbar-link ml-2">Shop All</a>
       </div>
 
-      <div class="header-section">
-        <div class="header-search">
-          <input class="search-input" placeholder="What are you looking for?" />
-          <i class="fa fa-search search-btn-icon"></i>
+      <div class="navbar-section">
+        <div class="navbar-icon-link flex-column-center">
+          <i class="fa fa-search navbar-search-icon"></i>
         </div>
 
-        <div class="header-icon">
-          <a class="header-icon-link" href="/pages/profile.html">
+        <div class="navbar-icon">
+          <a class="navbar-icon-link flex-column-center" href="#">
             <i class="fas fa-user-alt"></i>
-            <span class="header-icon-text">Profile</span>
+            <span class="navbar-icon-text">Profile</span>
           </a>
         </div>
-        <div class="header-icon">
-          <a class="header-icon-link" href="/pages/wishlist.html">
+
+        <div class="navbar-icon">
+          <a
+            class="navbar-icon-link flex-column-center"
+            href="/pages/wishlist.html"
+          >
             <i class="fas fa-heart"></i>
-            <span class="header-icon-text">Wishlist</span>
+            <span class="navbar-icon-text">Wishlist</span>
           </a>
         </div>
-        <div class="header-icon">
-          <a class="header-icon-link" href="/pages/cart.html">
+
+        <div class="navbar-icon">
+          <a
+            class="navbar-icon-link flex-column-center"
+            href="/pages/cart.html"
+          >
             <i class="fas fa-shopping-cart badge badge-icon">
               <span class="badge-value icon-badge secondary">2</span>
             </i>
-            <span class="header-icon-text">Cart</span>
+            <span class="navbar-icon-text">Cart</span>
           </a>
         </div>
       </div>
     </header>
+    <form class="navbar-searchbar">
+      <input class="search-input" placeholder="What are you looking for?" />
+      <i class="fa fa-search searchbar-search-icon"></i>
+      <i class="fas fa-times searchbar-close-icon"></i>
+    </form>
 
     <nav>
       <a href="/pages/product.html" class="nav-link">Decor</a>
@@ -116,6 +133,10 @@
 
         <section class="address-section">
           <div class="flex-column gap-2">
+            <div class="address-title items-center">
+              <h6 class="m-0">Saved Addresses</h6>
+              <button class="button inverted-secondary">Add New Address</button>
+            </div>
             <div class="card-horizontal border-1">
               <div
                 class="address-header border-bottom-1 font-size-md p-0p5 px-1"
@@ -123,10 +144,22 @@
                 <span>Apurva Sawant</span>
                 <span class="text-xs basic-bg radius-4px px-0p5">Home</span>
               </div>
-              <p class="description p-1">
+              <p class="description m-0 p-1">
                 Shop No. 3 and 4, Sohrab Hall, Opp. Jehangir Hospital, Mahatma
                 Gandhi Rd, Camp. Pune, Maharashtra, 411001
-                <span class="display-block pt-0p5">Mobile: 9876543210</span>
+                <span class="display-block pt-0p5 pb-1"
+                  >Mobile: 9876543210</span
+                >
+
+                <label for="default-address">
+                  <input
+                    id="default-address"
+                    class="checkbox-field"
+                    type="checkbox"
+                    checked
+                  />
+                  Default Address
+                </label>
               </p>
 
               <div class="action-buttons border-top-1">
@@ -148,9 +181,20 @@
                 <span>Apurva Sawant</span>
                 <span class="text-xs basic-bg radius-4px px-0p5">Work</span>
               </div>
-              <p class="description p-1">
+              <p class="description m-0 p-1">
                 MIDC, Mira Road East, Mira Bhayandar, Maharashtra, 401107
-                <span class="display-block pt-0p5">Mobile: 022 4206 6666</span>
+                <span class="display-block pt-0p5 pb-1"
+                  >Mobile: 022 4206 6666</span
+                >
+
+                <label for="default-address2">
+                  <input
+                    id="default-address2"
+                    class="checkbox-field"
+                    type="checkbox"
+                  />
+                  Default Address
+                </label>
               </p>
 
               <div class="action-buttons border-top-1">
@@ -213,13 +257,22 @@
           Sawant
         </small>
         <div class="mt-1">
-          <a class="link m-1" href="https://github.com/ApuvaSawant11"
+          <a
+            class="link m-1"
+            target="_blank"
+            href="https://github.com/ApuvaSawant11"
             ><i class="fab fa-github" aria-hidden="true"></i
           ></a>
-          <a class="link m-1" href="https://twitter.com/apurvasawant11"
+          <a
+            class="link m-1"
+            target="_blank"
+            href="https://twitter.com/ApurvaSawant11"
             ><i class="fab fa-twitter" aria-hidden="true"></i
           ></a>
-          <a class="link m-1" href="https://www.linkedin.com/in/apurvasawant11"
+          <a
+            class="link m-1"
+            target="_blank"
+            href="https://www.linkedin.com/in/apurvasawant11"
             ><i class="fab fa-linkedin" aria-hidden="true"></i
           ></a>
         </div>

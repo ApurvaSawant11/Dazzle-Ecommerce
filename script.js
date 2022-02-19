@@ -1,3 +1,17 @@
+// -------------------navbar-----------------
+const navbarSearchIcon = document.querySelector('.navbar-search-icon');
+const searchbarClose = document.querySelector('.searchbar-close-icon');
+const navbarSearchbar = document.querySelector('.navbar-searchbar')
+
+navbarSearchIcon.addEventListener('click', () => {
+    navbarSearchbar.classList.toggle('show')
+})
+
+searchbarClose.addEventListener('click', () => {
+    navbarSearchbar.classList.remove('show')
+})
+
+// -----------------product-----------
 const rangeInput = document.querySelectorAll(".range"),
     inputField = document.querySelectorAll(".input-field"),
     range = document.querySelector(".slider .progress");
