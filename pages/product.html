@@ -9,7 +9,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
     />
     <link rel="stylesheet" href="/styles.css" />
-    <title>Cerashop</title>
+    <title>Cerashop | Products</title>
   </head>
   <body>
     <div class="sub-header text-center">
@@ -76,7 +76,7 @@
       <i class="fas fa-times searchbar-close-icon"></i>
     </form>
 
-    <nav>
+    <nav class="sub-navigation">
       <a href="/pages/product.html" class="nav-link">Decor</a>
       <a href="/pages/product.html" class="nav-link">Dining</a>
       <a href="/pages/product.html" class="nav-link">Kitchen</a>
@@ -86,6 +86,16 @@
 
     <main>
       <h4 class="text-center text-uppercase p-1">Products</h4>
+      <div class="short-filter-container">
+        <div class="short-filter-bar border-top-1">
+          <a class="button-link p-1 pl-2p5 border-right-1"
+            ><i class="fa-solid fa-filter"></i> Filter</a
+          >
+          <a class="button-link p-1 pr-2p5 border-left-1"
+            ><i class="fa-solid fa-sort"></i> Sort</a
+          >
+        </div>
+      </div>
       <section class="product-container border-bottom-1 my-3">
         <aside class="filter-bar pt-0p5 p-2p5">
           <div
@@ -386,10 +396,10 @@
       </div>
 
       <div class="flex-column items-center footer-logo">
-        <a href="/index.html" class="header-logo no-underline">
-          <img src="/images/logo.svg" alt="dazzle Cerashop" />
-          <span class="cera">CERA</span>
-          <span class="shop">shop</span>
+        <a href="/index.html" class="navbar-logo no-underline">
+          <img class="logo-img" src="/images/logo.svg" alt="dazzle UI" />
+          <span class="primary-text">Cera</span>
+          <span class="secondary-text">Shop</span>
         </a>
         <small class="m-0 mt-1">© 2022, All rights reserved</small>
         <small>

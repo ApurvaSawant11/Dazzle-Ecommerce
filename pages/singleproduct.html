@@ -9,7 +9,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
     />
     <link rel="stylesheet" href="/styles.css" />
-    <title>Cerashop | Cart</title>
+    <title>Cerashop</title>
   </head>
   <body>
     <div class="sub-header text-center">
@@ -38,7 +38,10 @@
         </div>
 
         <div class="navbar-icon">
-          <a class="navbar-icon-link flex-column-center" href="/pages/profile.html">
+          <a
+            class="navbar-icon-link flex-column-center"
+            href="/pages/profile.html"
+          >
             <i class="fas fa-user-alt"></i>
             <span class="navbar-icon-text">Profile</span>
           </a>
@@ -81,120 +84,7 @@
       <a href="/pages/product.html" class="nav-link">Brands</a>
     </nav>
 
-    <main>
-      <h4 class="text-center text-uppercase p-1">My Cart</h4>
-      <div class="table-container m-auto">
-        <div class="cart-header">
-          <span class="cart-header-item pb-1">Product</span>
-          <span class="cart-header-item pb-1 text-center">Quantity</span>
-          <span class="cart-header-item pb-1 text-right">Total</span>
-        </div>
-        <div class="cart-item">
-          <div class="card-horizontal">
-            <div class="card-info">
-              <img class="card-img-horizontal" src="/images/pink-planters.jpg" alt="planter" />
-              <div class="card-details">
-                <div class="title">Elegant round pink planters</div>
-                <div class="subtitle item-price">Rs. 849</div>
-                <div>
-                  <button class="cart-button danger-text">Remove</button> |
-                  <button class="cart-button secondary-text fw-700">
-                    Move To Wishlist
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="cart-actions text-center m-auto">
-            <div class="quantity-selector m-auto">
-              <button class="quantity-btn">-</button>
-              <input class="quantity-input" type="text" value="1" />
-              <button class="quantity-btn">+</button>
-            </div>
-          </div>
-  
-          <div class="final-price text-right">Rs. 849</div>
-        </div>
-  
-        <div class="cart-item">
-          <div class="card-horizontal">
-            <div class="card-info">
-              <div class="card-img">
-                <img class="card-img-horizontal" src="/images/blue-cup-black-bg.jpg" alt="cup"/>
-              </div>
-              <div class="card-details">
-                <div class="title">Simple Cappuccino Cup</div>
-                <div class="subtitle item-price">Rs. 849</div>
-                <div>
-                  <button class="cart-button danger-text">Remove</button> |
-                  <button class="cart-button secondary-text fw-700">
-                    Move To Wishlist
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="cart-actions">
-            <div class="quantity-selector m-auto">
-              <button class="quantity-btn">-</button>
-              <input class="quantity-input" type="text" value="2" />
-              <button class="quantity-btn">+</button>
-            </div>
-          </div>
-          <div class="final-price text-right">Rs. 1698</div>
-        </div>
-      </main>
-      <div class="cart-footer m-auto">
-        <div class="cart-offers">
-          <div class="gift-wrapper flex-row m-2 ml-0">
-            <img class="gift-svg" src="/assets/NotoWrappedGift.svg"  alt="product" />
-            <div class="pl-1">
-              <div>Want to gift your loved ones?(Rs.30)</div>
-              <button class="plain-button secondary-text display-block">
-                Add Gift Wrap
-              </button>
-            </div>
-          </div>
-          <div class="coupon-wrapper flex-row items-center m-2 ml-0">
-            <img class="coupon-svg" src="/assets/PhTag.svg" alt="product" />
-            <div class="input-field ml-0p5">
-              <input
-                class="input coupon-input"
-                type="text"
-                placeholder="Coupon Code"
-              />
-              <a class="button-link secondary-text ml-0p5 fw-700 coupon-btn"
-                >Apply</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="cart-recap">
-          <div>
-            <span class="cart-total">Cart Total:</span>
-            <span class="price-detail-value">Rs. 2,547</span>
-          </div>
-          <div>
-            <span>Coupon Discount: </span
-            ><span class="price-detail-value danger-text">-Rs. 1,000</span>
-          </div>
-          <div>
-            <span>Total Quantity: </span
-            ><span class="price-detail-value">3</span>
-          </div>
-          <div>
-            <span>Convenience Fee:</span>
-            <span class="price-detail-value secondary-text fw-700">FREE</span>
-          </div>
-          <div class="fw-700">
-            <span>Total Amount: </span
-            ><span class="price-detail-value">Rs. 1,547</span>
-          </div>
-          <button class="button primary mt-1 checkout-btn">Checkout</button>
-        </div>
-      </div>
-      </div>
-    </main>
+    <main></main>
 
     <footer class="basic-bg flex-row wrap items-start p-3 py-2">
       <div class="footer-item footer-links">
@@ -229,10 +119,10 @@
       </div>
 
       <div class="flex-column items-center footer-logo">
-        <a href="/index.html" class="header-logo no-underline">
-          <img src="/images/logo.svg" alt="dazzle Cerashop" />
-          <span class="cera">CERA</span>
-          <span class="shop">shop</span>
+        <a href="/index.html" class="navbar-logo no-underline">
+          <img class="logo-img" src="/images/logo.svg" alt="dazzle UI" />
+          <span class="primary-text">Cera</span>
+          <span class="secondary-text">Shop</span>
         </a>
         <small class="m-0 mt-1">© 2022, All rights reserved</small>
         <small>

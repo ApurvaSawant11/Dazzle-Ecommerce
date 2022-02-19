@@ -1,5 +1,5 @@
 @import url("https://dazzle-ui-components.netlify.app/components/components.css");
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css");
 
 @import './css/header.css';
 @import './css/navbar.css';
@@ -25,7 +25,7 @@
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     align-items: center;
     justify-content: center;
     grid-gap: 1rem;
@@ -123,15 +123,81 @@ footer {
     text-decoration: none;
 }
 
+@media screen and (max-width: 1100px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .card-vertical {
+        width: 12rem;
+        /* margin: 0; */
+    }
+
+    .card-img-vertical,
+    .overlay {
+        height: 12rem;
+    }
+
+    .card-vertical .title,
+    .card-button {
+        font-size: 0.8rem;
+    }
+
+    .card-button {
+        padding: 0.5rem;
+    }
+}
 
 @media screen and (max-width: 720px) {
     .myhamburger {
         display: block;
     }
+
+    footer {
+        font-size: small;
+        padding: 0.5rem;
+    }
+
+    footer h6 {
+        font-size: small;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        padding: 0.5rem;
+    }
 }
 
 @media screen and (max-width: 480px) {
+
+    .sub-header {
+        font-size: small;
+    }
+
     .sub-navigation {
         display: none;
+    }
+
+    .card-vertical {
+        width: 10rem;
+        /* margin: 0; */
+    }
+
+    .card-img-vertical,
+    .overlay {
+        height: 10rem;
+    }
+
+    .card-vertical .title,
+    .card-button {
+        font-size: 0.8rem;
+    }
+
+    .card-button {
+        padding: 0.5rem;
     }
 }
