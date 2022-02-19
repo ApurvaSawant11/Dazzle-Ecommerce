@@ -21,12 +21,15 @@ Dazzle Cerashop is an E-commerce website which sells ceramic products.
 ## Features
 
 1. [Home](https://dazzle-cerashop.netlify.app/)
-2. [Login])(https://dazzle-cerashop.netlify.app/pages/login.html)
+2. [Login](https://dazzle-cerashop.netlify.app/pages/login.html)
 3. [Signup](https://dazzle-cerashop.netlify.app/pages/signup.html)
-4. [Product Listing Page](https://dazzle-cerashop.netlify.app/pages/product.html)
-5. [Filters](https://dazzle-cerashop.netlify.app/pages/product.html)
-6. [Wishlist Management](https://dazzle-cerashop.netlify.app/pages/wishlist.html)
-7. [Cart Management](https://dazzle-cerashop.netlify.app/pages/cart.html)
+4. [Forgot Password](https://dazzle-cerashop.netlify.app/pages/forgotpassword.html)
+5. [Profile Page](https://dazzle-cerashop.netlify.app/pages/profile.html)
+6. [Address Management](https://dazzle-cerashop.netlify.app/pages/profile.html)
+7. [Product Listing Page](https://dazzle-cerashop.netlify.app/pages/product.html)
+8. [Filters](https://dazzle-cerashop.netlify.app/pages/product.html)
+9. [Wishlist Management](https://dazzle-cerashop.netlify.app/pages/wishlist.html)
+10. [Cart Management](https://dazzle-cerashop.netlify.app/pages/cart.html)
 
 ## Connect
 
