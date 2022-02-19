@@ -18,44 +18,63 @@
       >
       <span class="offer-code">Use code FREEDEL</span>
     </div>
-    <header>
-      <div class="header-section">
-        <a href="/index.html" class="header-logo no-underline">
-          <img src="/images/logo.svg" alt="dazzle Cerashop" />
-          <span class="cera">CERA</span>
-          <span class="shop">shop</span>
+    <header class="header flex-row wrap">
+      <div class="navbar-section">
+        <i class="fas fa-bars fa-lg primary-text myhamburger"></i>
+
+        <a href="/index.html" class="navbar-logo no-underline">
+          <img class="logo-img" src="/images/logo.svg" alt="dazzle UI" />
+          <span class="primary-text">Cera</span>
+          <span class="secondary-text">Shop</span>
         </a>
-        <a href="/index.html" class="header-home ml-1">Home</a>
+
+        <a href="/index.html" class="navbar-link ml-2">Home</a>
+        <a href="/pages/product.html" class="navbar-link ml-2">Shop All</a>
       </div>
 
-      <div class="header-section">
-        <div class="header-search">
-          <input class="search-input" placeholder="What are you looking for?" />
-          <i class="fa fa-search search-btn-icon"></i>
+      <div class="navbar-section">
+        <div class="navbar-icon-link flex-column-center">
+          <i class="fa fa-search navbar-search-icon"></i>
         </div>
 
-        <div class="header-icon">
-          <a class="header-icon-link" href="/pages/login.html">
+        <div class="navbar-icon">
+          <a
+            class="navbar-icon-link flex-column-center"
+            href="/pages/login.html"
+          >
             <i class="fas fa-user-alt"></i>
-            <span class="header-icon-text">Login</span>
+            <span class="navbar-icon-text">Login</span>
           </a>
         </div>
-        <div class="header-icon">
-          <a class="header-icon-link" href="/pages/wishlist.html">
+
+        <div class="navbar-icon">
+          <a
+            class="navbar-icon-link flex-column-center"
+            href="/pages/wishlist.html"
+          >
             <i class="fas fa-heart"></i>
-            <span class="header-icon-text">Wishlist</span>
+            <span class="navbar-icon-text">Wishlist</span>
           </a>
         </div>
-        <div class="header-icon">
-          <a class="header-icon-link" href="/pages/cart.html">
+
+        <div class="navbar-icon">
+          <a
+            class="navbar-icon-link flex-column-center"
+            href="/pages/cart.html"
+          >
             <i class="fas fa-shopping-cart badge badge-icon">
               <span class="badge-value icon-badge secondary">2</span>
             </i>
-            <span class="header-icon-text">Cart</span>
+            <span class="navbar-icon-text">Cart</span>
           </a>
         </div>
       </div>
     </header>
+    <form class="navbar-searchbar radius-0">
+      <input class="search-input" placeholder="What are you looking for?" />
+      <i class="fa fa-search searchbar-search-icon"></i>
+      <i class="fas fa-times searchbar-close-icon"></i>
+    </form>
 
     <nav>
       <a href="/pages/product.html" class="nav-link">Decor</a>
@@ -116,5 +135,72 @@
         </p>
       </form>
     </section>
+
+    <footer class="basic-bg flex-row wrap items-start p-3 py-2">
+      <div class="footer-item footer-links">
+        <h6 class="text-uppercase underline">Categories</h6>
+        <ul class="links">
+          <li><a href="/pages/product.html" class="link">Bowls</a></li>
+          <li><a href="/pages/product.html" class="link">Cups</a></li>
+          <li><a href="/pages/product.html" class="link">Plates</a></li>
+          <li><a href="/pages/product.html" class="link">Planters</a></li>
+          <li><a href="/pages/product.html" class="link">Gifts</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-item footer-links">
+        <h6 class="text-uppercase underline">Account</h6>
+        <ul class="links">
+          <li><a href="/pages/profile.html" class="link">My Account</a></li>
+          <li><a href="/pages/wishlist.html" class="link">Wishlist</a></li>
+          <li><a href="/pages/cart.html" class="link">Cart</a></li>
+          <li><a href="#" class="link">Track Order</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-item footer-links">
+        <h6 class="text-uppercase underline">Help</h6>
+        <ul class="links">
+          <li><a href="#" class="link">Return & Refund</a></li>
+          <li><a href="#" class="link">FAQ</a></li>
+          <li><a href="#" class="link">Contact Us</a></li>
+          <li><a href="#" class="link">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="flex-column items-center footer-logo">
+        <a href="/index.html" class="header-logo no-underline">
+          <img src="/images/logo.svg" alt="dazzle Cerashop" />
+          <span class="cera">CERA</span>
+          <span class="shop">shop</span>
+        </a>
+        <small class="m-0 mt-1">© 2022, All rights reserved</small>
+        <small>
+          Made with <i class="fas fa-heart" aria-hidden="true"></i> by Apurva
+          Sawant
+        </small>
+        <div class="mt-1">
+          <a
+            class="link m-1"
+            target="_blank"
+            href="https://github.com/ApuvaSawant11"
+            ><i class="fab fa-github" aria-hidden="true"></i
+          ></a>
+          <a
+            class="link m-1"
+            target="_blank"
+            href="https://twitter.com/ApurvaSawant11"
+            ><i class="fab fa-twitter" aria-hidden="true"></i
+          ></a>
+          <a
+            class="link m-1"
+            target="_blank"
+            href="https://www.linkedin.com/in/apurvasawant11"
+            ><i class="fab fa-linkedin" aria-hidden="true"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+    <script src="/script.js"></script>
   </body>
 </html>

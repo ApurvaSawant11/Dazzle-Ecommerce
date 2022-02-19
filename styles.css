@@ -10,7 +10,7 @@
 @import './css/profile.css';
 
 :root {
-    --primary: #000;
+    --primary: #252525;
     --discounted-price: #f53f3f;
     --card-button-hover: #f0fffb;
     --opacity-50: rgba(0, 0, 0, 0.26);
@@ -34,6 +34,10 @@
 
 main {
     padding: 0;
+}
+
+.myhamburger {
+    display: none;
 }
 
 .card-vertical {
@@ -68,7 +72,7 @@ main {
 }
 
 .card-button:hover {
-    background: var(--light-black);
+    background: var(--primary);
     color: var(--white-color);
 }
 
@@ -117,4 +121,17 @@ footer {
 .link {
     color: var(--light-black);
     text-decoration: none;
+}
+
+
+@media screen and (max-width: 720px) {
+    .myhamburger {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .sub-navigation {
+        display: none;
+    }
 }
