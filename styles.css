@@ -7,6 +7,7 @@
 @import './css/loginSignup.css';
 @import './css/cart.css';
 @import './css/product.css';
+@import './css/profile.css';
 
 :root {
     --primary: #000;
@@ -101,13 +102,16 @@ footer {
     margin-top: 4rem;
 }
 
+.footer-logo {
+    align-self: center
+}
+
 .links {
     list-style: none;
 }
 
 .links>li {
     padding: 4px 0;
-    font-size: 1.1rem;
 }
 
 .link {
