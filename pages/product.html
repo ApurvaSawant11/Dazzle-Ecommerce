@@ -20,7 +20,7 @@
     </div>
     <header>
       <div class="header-section">
-        <a href="/index.html" class="header-logo text-decor-none">
+        <a href="/index.html" class="header-logo no-underline">
           <img src="/images/logo.svg" alt="dazzle Cerashop" />
           <span class="cera">CERA</span>
           <span class="shop">shop</span>
@@ -35,9 +35,9 @@
         </div>
 
         <div class="header-icon">
-          <a class="header-icon-link" href="/pages/login.html">
+          <a class="header-icon-link" href="/pages/profile.html">
             <i class="fas fa-user-alt"></i>
-            <span class="header-icon-text">Login</span>
+            <span class="header-icon-text">Profile</span>
           </a>
         </div>
         <div class="header-icon">
@@ -68,8 +68,13 @@
     <main>
       <h4 class="text-center text-uppercase p-1">Products</h4>
       <section class="product-container my-3">
-        <aside class="filter-bar p-2p5">
-          <h5 class="text-uppercase">Price</h5>
+        <aside class="filter-bar pt-0p5 p-2p5">
+          <div class="filter-header text-uppercase border-bottom-1 pb-0p5 flex-row items-center wrap">
+            <h5>Filters</h5>
+            <button class="plain-button secondary-text underline clear-filter-btn">Clear All</button>
+          </div>
+          
+          <h6 class="text-uppercase">Price</h6>
           <div class="price-range mt-2">
             <div class="range-group">
               <input
@@ -116,7 +121,7 @@
           </div>
 
           <div>
-            <h5 class="text-uppercase mt-2p5">Categories</h5>
+            <h6 class="text-uppercase mt-2p5">Categories</h6>
             <label class="checkbox-container">
               <input type="checkbox" class="checkbox-field" />
               Cups
@@ -135,7 +140,7 @@
             </label>
           </div>
 
-          <h5 class="text-uppercase mt-2p5">Rating</h5>
+          <h6 class="text-uppercase mt-2p5">Rating</h6>
           <div>
             <label class="radio-container">
               <input type="radio" class="radio-field" checked="checked" name="radio" />
@@ -152,6 +157,18 @@
             <label class="radio-container">
               <input type="radio" class="radio-field" name="radio" />
               1 stars & Above
+            </label>
+          </div>
+
+          <h6 class="text-uppercase mt-2p5">Sort By</h6>
+          <div>
+            <label class="radio-container">
+              <input type="radio" class="radio-field" checked="checked" name="radio-sort" />
+              Price - High to Low
+            </label>
+            <label class="radio-container">
+              <input type="radio" class="radio-field" name="radio-sort" />
+              Price - Low to High
             </label>
           </div>
         </aside>

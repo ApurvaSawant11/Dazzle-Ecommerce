@@ -6,6 +6,15 @@
   border-right: 1px solid var(--border-color);
 }
 
+.filter-header {
+  justify-content: space-between;
+}
+
+.clear-filter-btn {
+  font-size: small;
+  font-weight: 500;
+}
+
 .product-container {
   border-top: 1px solid var(--border-color);
   display: flex;
