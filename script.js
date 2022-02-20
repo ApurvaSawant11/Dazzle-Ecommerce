@@ -87,8 +87,6 @@ if (filterBtn) {
     })
 
     sortBtn.addEventListener('click', () => {
-        // dropdownContent.style.display = "block"
-        // dropdownContent.classList.add('display-block')
         dropdownContent.classList.toggle("show-none")
     })
 }
