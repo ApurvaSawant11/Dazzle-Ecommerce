@@ -30,6 +30,11 @@
     align-self: center;
 }
 
+.login-form h4,
+.signup-form h4 {
+    display: none;
+}
+
 .form-name {
     flex-wrap: nowrap;
 }
@@ -45,6 +50,8 @@
 .authbox-container {
     font-size: small;
     justify-content: space-between;
+    white-space: nowrap;
+    gap: 0.5rem;
 }
 
 .authbox-container label {
@@ -61,9 +68,40 @@
     background: var(--primary);
     color: var(--white-color);
     display: block;
-    width: 100%;
 }
 
 .change-pwd-div {
     display: none;
+}
+
+@media screen and (max-width: 680px) {
+
+    .login-form h4,
+    .signup-form h4 {
+        display: block;
+    }
+
+    .signup-form {
+        padding-top: 0;
+    }
+
+    .form-img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .auth-container {
+        box-shadow: none;
+        padding: 1rem;
+        margin: 0 auto;
+    }
+
+    .login-form,
+    .signup-form,
+    .forgot-form {
+        width: 20rem;
+        padding: 1rem;
+    }
 }

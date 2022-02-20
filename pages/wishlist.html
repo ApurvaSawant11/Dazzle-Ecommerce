@@ -9,7 +9,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
     />
     <link rel="stylesheet" href="/styles.css" />
-    <title>Cerashop</title>
+    <title>Cerashop | Wishlist</title>
   </head>
   <body>
     <div class="sub-header text-center">
@@ -76,12 +76,31 @@
       <i class="fas fa-times searchbar-close-icon"></i>
     </form>
 
-    <nav>
+    <nav class="sub-navigation">
+      <div class="flex-row-center drawer-header">
+        <a href="/index.html" class="nav-link">Home</a>
+        <a href="/pages/product.html" class="nav-link">Shop All</a>
+      </div>
       <a href="/pages/product.html" class="nav-link">Decor</a>
       <a href="/pages/product.html" class="nav-link">Dining</a>
       <a href="/pages/product.html" class="nav-link">Kitchen</a>
       <a href="/pages/product.html" class="nav-link">Gifts</a>
       <a href="/pages/product.html" class="nav-link">Brands</a>
+      <div class="drawer-footer border-top-1">
+        <div class="navbar-icon p-1 pl-0p5">
+          <a class="navbar-icon-link" href="/pages/profile.html">
+            <i class="fas fa-user-alt"></i>
+            <span class="navbar-icon-text">Profile</span>
+          </a>
+        </div>
+
+        <div class="navbar-icon p-1 pl-0p5">
+          <a class="navbar-icon-link" href="/pages/wishlist.html">
+            <i class="fas fa-heart"></i>
+            <span class="navbar-icon-text">Wishlist</span>
+          </a>
+        </div>
+      </div>
     </nav>
 
     <main>
@@ -264,10 +283,10 @@
       </div>
 
       <div class="flex-column items-center footer-logo">
-        <a href="/index.html" class="header-logo no-underline">
-          <img src="/images/logo.svg" alt="dazzle Cerashop" />
-          <span class="cera">CERA</span>
-          <span class="shop">shop</span>
+        <a href="/index.html" class="navbar-logo no-underline">
+          <img class="logo-img" src="/images/logo.svg" alt="dazzle UI" />
+          <span class="primary-text">Cera</span>
+          <span class="secondary-text">Shop</span>
         </a>
         <small class="m-0 mt-1">© 2022, All rights reserved</small>
         <small>
@@ -278,7 +297,7 @@
           <a
             class="link m-1"
             target="_blank"
-            href="https://github.com/ApuvaSawant11"
+            href="https://github.com/ApurvaSawant11"
             ><i class="fab fa-github" aria-hidden="true"></i
           ></a>
           <a

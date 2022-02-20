@@ -9,7 +9,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
     />
     <link rel="stylesheet" href="/styles.css" />
-    <title>Cerashop | Login</title>
+    <title>Cerashop</title>
   </head>
   <body>
     <div class="sub-header text-center">
@@ -38,9 +38,12 @@
         </div>
 
         <div class="navbar-icon">
-          <a class="navbar-icon-link flex-column-center" href="#">
+          <a
+            class="navbar-icon-link flex-column-center"
+            href="/pages/profile.html"
+          >
             <i class="fas fa-user-alt"></i>
-            <span class="navbar-icon-text">Login</span>
+            <span class="navbar-icon-text">Profile</span>
           </a>
         </div>
 
@@ -74,62 +77,80 @@
     </form>
 
     <nav class="sub-navigation">
+      <div class="flex-row-center drawer-header">
+        <a href="/index.html" class="nav-link">Home</a>
+        <a href="/pages/product.html" class="nav-link">Shop All</a>
+      </div>
       <a href="/pages/product.html" class="nav-link">Decor</a>
       <a href="/pages/product.html" class="nav-link">Dining</a>
       <a href="/pages/product.html" class="nav-link">Kitchen</a>
       <a href="/pages/product.html" class="nav-link">Gifts</a>
       <a href="/pages/product.html" class="nav-link">Brands</a>
+      <div class="drawer-footer border-top-1">
+        <div class="navbar-icon p-1 pl-0p5">
+          <a class="navbar-icon-link" href="/pages/profile.html">
+            <i class="fas fa-user-alt"></i>
+            <span class="navbar-icon-text">Profile</span>
+          </a>
+        </div>
+
+        <div class="navbar-icon p-1 pl-0p5">
+          <a class="navbar-icon-link" href="/pages/wishlist.html">
+            <i class="fas fa-heart"></i>
+            <span class="navbar-icon-text">Wishlist</span>
+          </a>
+        </div>
+      </div>
     </nav>
 
-    <section class="auth-container">
-      <div class="form-img">
-        <img src="/images/login-image.JPG" />
-        <span class="img-text"
-          ><h3>LOGIN</h3>
-          Get access to our amazing offers and best selling products.</span
-        >
-      </div>
-      <form class="login-form p-2p5 pt-0">
-        <h4 class="text-center py-1">Login</h4>
-        <div class="input-field mb-2">
-          <input class="input" type="text" required="" />
-          <span class="bar"></span>
-          <label class="placeholder">Enter Email</label>
-        </div>
-        <div class="input-field">
-          <input class="input" type="password" required="" />
-          <span class="bar"></span>
-          <label class="placeholder">Password</label>
-        </div>
-        <div class="authbox-container flex-row gap-1 mt-0p5">
-          <label for="auth-checkbox">
-            <input id="auth-checkbox" type="checkbox" />
-            Remember me
-          </label>
-          <a
-            href="/pages/forgotpassword.html"
-            class="button-link secondary-text fw-700"
-            >Forgot Password?</a
-          >
-        </div>
+    <main>
+      <section class="flex-row-center items-start wrap mt-2p5 product-section">
+        <img src="/images/white-brown-planter.jpg" />
+        <form class="product-form">
+          <div class="product-header flex-row-center">
+            <h5 class="text-uppercase pb-0p5">Brown White Planter</h5>
+            <span
+              ><i class="fa-solid fa-share-nodes fa-lg button-link"></i
+            ></span>
+          </div>
 
-        <p class="mt-1p5 mb-1">
-          <small
-            >By continuing, you agree to Dazzle Cerashop's
-            <span class="secondary-text fw-700">Terms of use</span> and
-            <span class="secondary-text fw-700">Privacy Policy.</span></small
+          <div>
+            <span class="discountedPrice text-md">Rs. 499</span>
+            <span class="originalPrice pl-0p5">Rs. 999</span>
+          </div>
+          <p class="dark-gray-text text-capitalize border-top-1 pt-2 pb-1">
+            Prices are inclusive of taxes. Free shipping on prepaid orders.
+          </p>
+          <div class="quantity-selector">
+            <button class="quantity-btn">-</button>
+            <input class="quantity-input" type="text" value="1" />
+            <button class="quantity-btn">+</button>
+          </div>
+          <button
+            type="submit"
+            class="button primary radius-0 mt-2 cta-cart-btn"
           >
-        </p>
-        <button class="button inverted-primary form-btn mb-1">
-          Login as Guest
-        </button>
-        <button class="button primary form-btn mb-1">Login</button>
-        <p class="text-center">
-          New user? Create your account
-          <a class="secondary-text fw-700" href="/pages/signup.html">here</a>
-        </p>
-      </form>
-    </section>
+            Add to Cart
+          </button>
+          <button
+            class="button inverted-primary radius-0 mt-1p5 cta-wishlist-btn"
+          >
+            Move to Wishlist
+          </button>
+
+          <div>
+            <p class="mt-1">
+              <i class="fa-solid fa-indian-rupee-sign"></i> Pay on delivery
+              available
+            </p>
+            <p>
+              <i class="fa-solid fa-right-left"></i> Easy 14 days exchange &
+              return available
+            </p>
+          </div>
+        </form>
+      </section>
+    </main>
 
     <footer class="basic-bg flex-row wrap items-start p-3 py-2">
       <div class="footer-item footer-links">

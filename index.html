@@ -77,24 +77,35 @@
     </form>
 
     <nav class="sub-navigation">
+      <div class="flex-row-center drawer-header">
+        <a href="/index.html" class="nav-link">Home</a>
+        <a href="/pages/product.html" class="nav-link">Shop All</a>
+      </div>
       <a href="/pages/product.html" class="nav-link">Decor</a>
       <a href="/pages/product.html" class="nav-link">Dining</a>
       <a href="/pages/product.html" class="nav-link">Kitchen</a>
       <a href="/pages/product.html" class="nav-link">Gifts</a>
       <a href="/pages/product.html" class="nav-link">Brands</a>
+      <div class="drawer-footer border-top-1">
+        <div class="navbar-icon p-1 pl-0p5">
+          <a class="navbar-icon-link" href="/pages/login.html">
+            <i class="fas fa-user-alt"></i>
+            <span class="navbar-icon-text">Login</span>
+          </a>
+        </div>
+
+        <div class="navbar-icon p-1 pl-0p5">
+          <a class="navbar-icon-link" href="/pages/wishlist.html">
+            <i class="fas fa-heart"></i>
+            <span class="navbar-icon-text">Wishlist</span>
+          </a>
+        </div>
+      </div>
     </nav>
 
     <main>
       <section>
         <div class="carousel-container">
-          <div class="container">
-            <img
-              class="carousel-img"
-              src="/images/carousel-1.jpg"
-              alt="product"
-            />
-          </div>
-
           <div class="container">
             <img
               class="carousel-img"
@@ -119,6 +130,14 @@
             />
           </div>
 
+          <div class="container">
+            <img
+              class="carousel-img"
+              src="/images/carousel-1.jpg"
+              alt="product"
+            />
+          </div>
+
           <a class="left" onclick="moveSlide(-1)">
             <i class="fas fa-angle-left text-xl" aria-hidden="true"></i>
           </a>
@@ -138,7 +157,7 @@
 
       <section>
         <h2 class="text-center my-2 py-2">Featured Categories</h2>
-        <div class="category wrap gap-2 my-2">
+        <div class="category wrap gap-2 my-2 p-0p5">
           <div class="card-vertical category-item">
             <span class="category-header mt-1p5">CUPS</span>
             <img
@@ -207,97 +226,117 @@
         </div>
       </section>
 
-      <section class="mt-2p5">
+      <section class="mt-2p5 combo-offers">
         <h3 class="text-center p-3">Combo Offers</h3>
-        <div class="value-priced flex-row wrap gap-1">
+        <div class="grid-container mx-auto">
           <div class="card-vertical m-1">
-            <div class="badge">
-              <img
-                class="card-img-vertical img-responsive"
-                src="/images/combo-set-3.jpg"
-                alt="product"
-              />
-              <span class="badge-text badge-on-left success px-0p5"
-                >Bestseller</span
-              >
-            </div>
-            <div class="card-details text-center">
-              <div class="title">Micheilin Set of 7 Plates</div>
-              <div class="card-footer-vertical">
-                <span class="discountedPrice">Rs. 499</span>
-                <span class="originalPrice pl-0p5">Rs. 999</span>
+            <a
+              href="/pages/singleproduct.html"
+              class="no-underline primary-text"
+            >
+              <div class="badge">
+                <img
+                  class="card-img-vertical img-responsive"
+                  src="/images/combo-set-3.jpg"
+                  alt="product"
+                />
+                <span class="badge-text badge-on-left success px-0p5"
+                  >Bestseller</span
+                >
               </div>
-            </div>
+              <div class="card-details text-center">
+                <div class="title">Micheilin Set of 7 Plates</div>
+                <div class="card-footer-vertical">
+                  <span class="discountedPrice">Rs. 499</span>
+                  <span class="originalPrice pl-0p5">Rs. 999</span>
+                </div>
+              </div>
+            </a>
             <button class="plain-button card-button mt-0p5">Add to Cart</button>
           </div>
 
           <div class="card-vertical m-1">
-            <div class="badge">
-              <img
-                class="card-img-vertical img-responsive"
-                src="/images/combo-set-4.jpg"
-                alt="product"
-              />
-              <span class="badge-text badge-on-left success px-0p5"
-                >Bestseller</span
-              >
-            </div>
-            <div class="card-details text-center">
-              <div class="title">Valiant Set of 6 Plates</div>
-              <div class="card-footer-vertical">
-                <span class="discountedPrice">Rs. 499</span>
-                <span class="originalPrice pl-0p5">Rs. 999</span>
+            <a
+              href="/pages/singleproduct.html"
+              class="no-underline primary-text"
+            >
+              <div class="badge">
+                <img
+                  class="card-img-vertical img-responsive"
+                  src="/images/combo-set-4.jpg"
+                  alt="product"
+                />
+                <span class="badge-text badge-on-left success px-0p5"
+                  >Bestseller</span
+                >
               </div>
-            </div>
+              <div class="card-details text-center">
+                <div class="title">Valiant Set of 6 Plates</div>
+                <div class="card-footer-vertical">
+                  <span class="discountedPrice">Rs. 499</span>
+                  <span class="originalPrice pl-0p5">Rs. 999</span>
+                </div>
+              </div>
+            </a>
             <button class="plain-button card-button mt-0p5">Add to Cart</button>
           </div>
 
           <div class="card-vertical m-1">
-            <div class="badge">
-              <img
-                class="card-img-vertical img-responsive"
-                src="/images/combo-set-2.jpg"
-                alt="product"
-              />
-              <span class="badge-text badge-on-left success px-0p5"
-                >Bestseller</span
-              >
-            </div>
-            <div class="card-details text-center">
-              <div class="title">Bolton Planters</div>
-              <div class="card-footer-vertical">
-                <span class="discountedPrice">Rs. 499</span>
-                <span class="originalPrice pl-0p5">Rs. 999</span>
+            <a
+              href="/pages/singleproduct.html"
+              class="no-underline primary-text"
+            >
+              <div class="badge">
+                <img
+                  class="card-img-vertical img-responsive"
+                  src="/images/combo-set-2.jpg"
+                  alt="product"
+                />
+                <span class="badge-text badge-on-left success px-0p5"
+                  >Bestseller</span
+                >
               </div>
-            </div>
+              <div class="card-details text-center">
+                <div class="title">Bolton Planters</div>
+                <div class="card-footer-vertical">
+                  <span class="discountedPrice">Rs. 499</span>
+                  <span class="originalPrice pl-0p5">Rs. 999</span>
+                </div>
+              </div>
+            </a>
             <button class="plain-button card-button mt-0p5">Add to Cart</button>
           </div>
 
           <div class="card-vertical m-1">
-            <div class="badge">
-              <img
-                class="card-img-vertical img-responsive"
-                src="/images/fancy-bowls.jpg"
-                alt="product"
-              />
-              <span class="badge-text badge-on-left success px-0p5"
-                >Bestseller</span
-              >
-            </div>
-            <div class="card-details text-center">
-              <div class="title">Taisia Bowls Set of 3</div>
-              <div class="card-footer-vertical">
-                <span class="discountedPrice">Rs. 499</span>
-                <span class="originalPrice pl-0p5">Rs. 999</span>
+            <a
+              href="/pages/singleproduct.html"
+              class="no-underline primary-text"
+            >
+              <div class="badge">
+                <img
+                  class="card-img-vertical img-responsive"
+                  src="/images/fancy-bowls.jpg"
+                  alt="product"
+                />
+                <span class="badge-text badge-on-left success px-0p5"
+                  >Bestseller</span
+                >
               </div>
-            </div>
+              <div class="card-details text-center">
+                <div class="title">Taisia Bowls Set of 3</div>
+                <div class="card-footer-vertical">
+                  <span class="discountedPrice">Rs. 499</span>
+                  <span class="originalPrice pl-0p5">Rs. 999</span>
+                </div>
+              </div>
+            </a>
             <button class="plain-button card-button mt-0p5">Add to Cart</button>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="basic-bg flex-row wrap items-start p-3 py-2">
+    <footer class="basic-bg flex-row wrap items-start">
       <div class="footer-item footer-links">
         <h6 class="text-uppercase underline">Categories</h6>
         <ul class="links">
@@ -330,10 +369,10 @@
       </div>
 
       <div class="flex-column items-center footer-logo">
-        <a href="/index.html" class="header-logo no-underline">
-          <img src="/images/logo.svg" alt="dazzle Cerashop" />
-          <span class="cera">CERA</span>
-          <span class="shop">shop</span>
+        <a href="/index.html" class="navbar-logo no-underline">
+          <img class="logo-img" src="/images/logo.svg" alt="dazzle UI" />
+          <span class="primary-text">Cera</span>
+          <span class="secondary-text">Shop</span>
         </a>
         <small class="m-0 mt-1">© 2022, All rights reserved</small>
         <small>
@@ -344,7 +383,7 @@
           <a
             class="link m-1"
             target="_blank"
-            href="https://github.com/ApuvaSawant11"
+            href="https://github.com/ApurvaSawant11"
             ><i class="fab fa-github" aria-hidden="true"></i
           ></a>
           <a

@@ -1,5 +1,5 @@
 @import url("https://dazzle-ui-components.netlify.app/components/components.css");
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css");
 
 @import './css/header.css';
 @import './css/navbar.css';
@@ -14,6 +14,7 @@
     --discounted-price: #f53f3f;
     --card-button-hover: #f0fffb;
     --opacity-50: rgba(0, 0, 0, 0.26);
+    --opacity-80: rgba(0, 0, 0, 0.8)
 }
 
 * {
@@ -25,7 +26,7 @@
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     align-items: center;
     justify-content: center;
     grid-gap: 1rem;
@@ -36,7 +37,9 @@ main {
     padding: 0;
 }
 
-.myhamburger {
+.myhamburger,
+.drawer-header,
+.drawer-footer {
     display: none;
 }
 
@@ -50,7 +53,7 @@ main {
     border-radius: 0;
 }
 
-.card-vertical>.card-details {
+.card-vertical .card-details {
     height: 5.5rem;
 }
 
@@ -65,7 +68,7 @@ main {
 }
 
 .card-button {
-    color: var(--dark-black);
+    color: var(--primary);
     border-bottom: 2px solid var(--border-color);
     background: var(--light-gray);
     border-radius: 0;
@@ -99,6 +102,31 @@ main {
     text-transform: uppercase;
 }
 
+.text-capitalize {
+    text-transform: capitalize;
+}
+
+.product-section {
+    gap: 3rem;
+}
+
+.product-header {
+    justify-content: space-between;
+}
+
+.product-section img {
+    width: 30rem;
+}
+
+.product-form {
+    width: 25rem;
+}
+
+.cta-cart-btn,
+.cta-wishlist-btn {
+    width: 100%;
+}
+
 /* -----------------footer------------------ */
 
 footer {
@@ -124,14 +152,119 @@ footer {
 }
 
 
+@media screen and (max-width: 1100px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
+    }
+
+    .card-vertical {
+        width: 12rem;
+    }
+
+    .card-img-vertical,
+    .overlay {
+        height: 12rem;
+    }
+
+    .card-vertical .title,
+    .card-button {
+        font-size: 0.8rem;
+    }
+
+    .card-button {
+        padding: 0.5rem;
+    }
+
+    .product-section {
+        gap: 1.5rem;
+    }
+
+    .product-form {
+        width: 20rem;
+    }
+}
+
+@media screen and (max-width: 840px) {
+
+    .product-section img,
+    .product-form {
+        padding: 0 3rem;
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 720px) {
+
     .myhamburger {
         display: block;
+    }
+
+    .drawer-header {
+        display: flex;
+    }
+
+    .sub-navigation {
+        display: none;
+    }
+
+    .nav-drawer {
+        display: flex;
+        flex-direction: column;
+        padding: 0 0 0.5rem 2rem;
+    }
+
+    footer {
+        font-size: small;
+        padding: 0.5rem;
+    }
+
+    footer h6 {
+        font-size: small;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        padding: 0.5rem;
     }
 }
 
 @media screen and (max-width: 480px) {
-    .sub-navigation {
-        display: none;
+
+    .sub-header {
+        font-size: small;
+    }
+
+    .drawer-footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-vertical {
+        width: 10rem;
+    }
+
+    .card-img-vertical,
+    .overlay {
+        height: 10rem;
+    }
+
+    .card-vertical .title,
+    .card-button {
+        font-size: 0.8rem;
+    }
+
+    .card-button {
+        padding: 0.5rem;
+    }
+
+    .product-section img,
+    .product-form {
+        padding: 0 1.5rem;
+    }
+
+    footer {
+        padding: 0;
     }
 }

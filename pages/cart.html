@@ -9,7 +9,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
     />
     <link rel="stylesheet" href="/styles.css" />
-    <title>Cerashop</title>
+    <title>Cerashop | Cart</title>
   </head>
   <body>
     <div class="sub-header text-center">
@@ -73,12 +73,31 @@
       <i class="fas fa-times searchbar-close-icon"></i>
     </form>
 
-    <nav>
+    <nav class="sub-navigation">
+      <div class="flex-row-center drawer-header">
+        <a href="/index.html" class="nav-link">Home</a>
+        <a href="/pages/product.html" class="nav-link">Shop All</a>
+      </div>
       <a href="/pages/product.html" class="nav-link">Decor</a>
       <a href="/pages/product.html" class="nav-link">Dining</a>
       <a href="/pages/product.html" class="nav-link">Kitchen</a>
       <a href="/pages/product.html" class="nav-link">Gifts</a>
       <a href="/pages/product.html" class="nav-link">Brands</a>
+      <div class="drawer-footer border-top-1">
+        <div class="navbar-icon p-1 pl-0p5">
+          <a class="navbar-icon-link" href="/pages/profile.html">
+            <i class="fas fa-user-alt"></i>
+            <span class="navbar-icon-text">Profile</span>
+          </a>
+        </div>
+
+        <div class="navbar-icon p-1 pl-0p5">
+          <a class="navbar-icon-link" href="/pages/wishlist.html">
+            <i class="fas fa-heart"></i>
+            <span class="navbar-icon-text">Wishlist</span>
+          </a>
+        </div>
+      </div>
     </nav>
 
     <main>
@@ -87,7 +106,7 @@
         <div class="cart-header">
           <span class="cart-header-item pb-1">Product</span>
           <span class="cart-header-item pb-1 text-center">Quantity</span>
-          <span class="cart-header-item pb-1 text-right">Total</span>
+          <span class="cart-header-item pb-1 text-right">SubTotal</span>
         </div>
         <div class="cart-item">
           <div class="card-horizontal">
@@ -104,16 +123,23 @@
                 </div>
               </div>
             </div>
+            <div class="cart-actions_mobile mt-1">
+              <div class="quantity-selector">
+                <button class="quantity-btn">-</button>
+                <input class="quantity-input" type="text" value="2" />
+                <button class="quantity-btn">+</button>
+              </div>
+              <div class="final-price fw-700">Rs. 849</div>
+            </div>
           </div>
-          <div class="cart-actions text-center m-auto">
+          <div class="cart-actions cart_web">
             <div class="quantity-selector m-auto">
               <button class="quantity-btn">-</button>
-              <input class="quantity-input" type="text" value="1" />
+              <input class="quantity-input" type="text" value="2" />
               <button class="quantity-btn">+</button>
             </div>
           </div>
-  
-          <div class="final-price text-right">Rs. 849</div>
+          <div class="final-price cart_web text-right fw-700">Rs. 849</div>
         </div>
   
         <div class="cart-item">
@@ -133,15 +159,24 @@
                 </div>
               </div>
             </div>
+            <div class="cart-actions_mobile mt-1">
+              <div class="quantity-selector">
+                <button class="quantity-btn">-</button>
+                <input class="quantity-input" type="text" value="2" />
+                <button class="quantity-btn">+</button>
+              </div>
+              <div class="final-price fw-700">Rs. 1698</div>
+            </div>
           </div>
-          <div class="cart-actions">
+
+          <div class="cart-actions cart_web">
             <div class="quantity-selector m-auto">
               <button class="quantity-btn">-</button>
               <input class="quantity-input" type="text" value="2" />
               <button class="quantity-btn">+</button>
             </div>
           </div>
-          <div class="final-price text-right">Rs. 1698</div>
+          <div class="final-price cart_web text-right fw-700">Rs. 1698</div>
         </div>
       </main>
       <div class="cart-footer m-auto">
@@ -186,7 +221,7 @@
             <span>Convenience Fee:</span>
             <span class="price-detail-value secondary-text fw-700">FREE</span>
           </div>
-          <div class="fw-700">
+          <div class="fw-700 fw-700 border-top-1 text-md pt-0p5">
             <span>Total Amount: </span
             ><span class="price-detail-value">Rs. 1,547</span>
           </div>
@@ -243,7 +278,7 @@
           <a
             class="link m-1"
             target="_blank"
-            href="https://github.com/ApuvaSawant11"
+            href="https://github.com/ApurvaSawant11"
             ><i class="fab fa-github" aria-hidden="true"></i
           ></a>
           <a
