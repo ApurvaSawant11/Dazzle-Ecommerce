@@ -11,6 +11,16 @@ searchbarClose.addEventListener('click', () => {
     navbarSearchbar.classList.remove('show')
 })
 
+// -----------------navbar hamburger-------------
+
+const myHamburger = document.querySelector(".myhamburger");
+const subNav = document.querySelector(".sub-navigation");
+
+myHamburger.addEventListener('click', () => {
+    subNav.classList.toggle("nav-drawer")
+
+})
+
 // -----------------product-----------
 const rangeInput = document.querySelectorAll(".range"),
     inputField = document.querySelectorAll(".input-field"),
@@ -52,6 +62,37 @@ rangeInput.forEach(input => {
     });
 });
 
+// --------------------product responsiveness----------------
+const filterBtn = document.querySelector(".filter-btn");
+const filterBar = document.querySelector(".filter-bar");
+const filterClose = document.querySelector('.fa-x');
+const addFilterBtn = document.querySelector('.add-filter-btn');
+const sortBtn = document.querySelector('.sort-btn');
+const dropdownContent = document.querySelector('.dropdown-content')
+
+if (filterBtn) {
+    const filterToggle = () => {
+        filterBar.classList.toggle("filter-drawer")
+    }
+    filterBtn.addEventListener("click", () => {
+        filterToggle();
+    })
+
+    filterClose.addEventListener('click', () => {
+        filterToggle()
+    })
+
+    addFilterBtn.addEventListener('click', () => {
+        filterToggle()
+    })
+
+    sortBtn.addEventListener('click', () => {
+        // dropdownContent.style.display = "block"
+        // dropdownContent.classList.add('display-block')
+        dropdownContent.classList.toggle("show-none")
+    })
+}
+
 // -----------------forgot password--------------
 
 const sendEmailBtn = document.querySelector('.send-email-btn');
@@ -72,7 +113,7 @@ const addressSection = document.querySelector(".address-section")
 const profileBtn = document.querySelector(".profile-btn");
 const addressBtn = document.querySelector(".address-btn");
 
-if (asideLink) {
+if (asideLink && addressBtn && profileBtn) {
     asideLink.forEach((link) => {
         link.addEventListener("click", () => {
             asideLink.forEach((link2) => {

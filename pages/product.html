@@ -77,27 +77,64 @@
     </form>
 
     <nav class="sub-navigation">
+      <div class="flex-row-center drawer-header">
+        <a href="/index.html" class="nav-link">Home</a>
+        <a href="/pages/product.html" class="nav-link">Shop All</a>
+      </div>
       <a href="/pages/product.html" class="nav-link">Decor</a>
       <a href="/pages/product.html" class="nav-link">Dining</a>
       <a href="/pages/product.html" class="nav-link">Kitchen</a>
       <a href="/pages/product.html" class="nav-link">Gifts</a>
       <a href="/pages/product.html" class="nav-link">Brands</a>
+      <div class="drawer-footer border-top-1">
+        <div class="navbar-icon p-1 pl-0p5">
+          <a class="navbar-icon-link" href="/pages/profile.html">
+            <i class="fas fa-user-alt"></i>
+            <span class="navbar-icon-text">Profile</span>
+          </a>
+        </div>
+
+        <div class="navbar-icon p-1 pl-0p5">
+          <a class="navbar-icon-link" href="/pages/wishlist.html">
+            <i class="fas fa-heart"></i>
+            <span class="navbar-icon-text">Wishlist</span>
+          </a>
+        </div>
+      </div>
     </nav>
 
     <main>
       <h4 class="text-center text-uppercase p-1">Products</h4>
       <div class="short-filter-container">
         <div class="short-filter-bar border-top-1">
-          <a class="button-link p-1 pl-2p5 border-right-1"
+          <a class="button-link p-1 pl-2p5 border-right-1 filter-btn"
             ><i class="fa-solid fa-filter"></i> Filter</a
           >
-          <a class="button-link p-1 pr-2p5 border-left-1"
+          <a class="button-link p-1 pr-2p5 border-left-1 sort-btn"
             ><i class="fa-solid fa-sort"></i> Sort</a
           >
+          <div class="dropdown-content show-none">
+            <label class="radio-container">
+              <input
+                type="radio"
+                class="radio-field"
+                checked="checked"
+                name="radio-sort"
+              />
+              Price - High to Low
+            </label>
+            <label class="radio-container">
+              <input type="radio" class="radio-field" name="radio-sort" />
+              Price - Low to High
+            </label>
+          </div>
         </div>
       </div>
       <section class="product-container border-bottom-1 my-3">
         <aside class="filter-bar pt-0p5 p-2p5">
+          <div class="text-right mt-1 button-link">
+            <i class="fa-solid fa-x"></i>
+          </div>
           <div
             class="filter-header text-uppercase border-bottom-1 pb-0p5 flex-row items-center wrap"
           >
@@ -200,8 +237,8 @@
             </label>
           </div>
 
-          <h6 class="text-uppercase mt-2p5">Sort By</h6>
-          <div>
+          <h6 class="text-uppercase mt-2p5 sort-by">Sort By</h6>
+          <div class="sort-by">
             <label class="radio-container">
               <input
                 type="radio"
@@ -216,6 +253,9 @@
               Price - Low to High
             </label>
           </div>
+          <button class="button primary radius-0 add-filter-btn mt-2">
+            Add Filters
+          </button>
         </aside>
         <div class="grid-container border-left-1 p-2">
           <div class="card-vertical m-1">

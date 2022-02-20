@@ -14,6 +14,7 @@
     --discounted-price: #f53f3f;
     --card-button-hover: #f0fffb;
     --opacity-50: rgba(0, 0, 0, 0.26);
+    --opacity-80: rgba(0, 0, 0, 0.8)
 }
 
 * {
@@ -36,7 +37,9 @@ main {
     padding: 0;
 }
 
-.myhamburger {
+.myhamburger,
+.drawer-header,
+.drawer-footer {
     display: none;
 }
 
@@ -191,8 +194,23 @@ footer {
 }
 
 @media screen and (max-width: 720px) {
+
     .myhamburger {
         display: block;
+    }
+
+    .drawer-header {
+        display: flex;
+    }
+
+    .sub-navigation {
+        display: none;
+    }
+
+    .nav-drawer {
+        display: flex;
+        flex-direction: column;
+        padding: 0 0 0.5rem 2rem;
     }
 
     footer {
@@ -218,8 +236,9 @@ footer {
         font-size: small;
     }
 
-    .sub-navigation {
-        display: none;
+    .drawer-footer {
+        display: flex;
+        flex-direction: column;
     }
 
     .card-vertical {

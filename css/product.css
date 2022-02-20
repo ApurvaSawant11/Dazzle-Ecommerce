@@ -21,12 +21,33 @@
 
 .short-filter-container {
   display: none;
+  position: relative;
 }
 
 .product-container {
   border-top: 1px solid var(--border-color);
   display: flex;
 }
+
+.add-filter-btn,
+.fa-x {
+  display: none;
+  width: 100%;
+}
+
+.dropdown-content {
+  position: absolute;
+  right: 0;
+  top: 4rem;
+  background: var(--white-color);
+  z-index: 2;
+  padding: 1rem;
+}
+
+.show-none {
+  display: none;
+}
+
 
 /* --------------price range---------------------- */
 .slider {
@@ -130,8 +151,26 @@ input[type="range"]::-webkit-slider-thumb {
 /* ---------------------Media Queries--------------------------- */
 
 @media screen and (max-width: 920px) {
-  .filter-bar {
+
+  .filter-bar,
+  .sort-by {
     display: none;
+  }
+
+  .add-filter-btn,
+  .fa-x {
+    display: block;
+  }
+
+  .filter-drawer {
+
+    position: fixed;
+    display: block;
+    background: var(--white-color);
+    z-index: 5;
+    top: 0rem;
+    min-height: 100vh;
+    box-shadow: 0px 0px 0px 50rem var(--opacity-80);
   }
 
   .short-filter-container {
