@@ -14,22 +14,43 @@ Dazzle Cerashop is an E-commerce website which sells ceramic products.
 
 ## Introduction
 
-- Dazzle Cerashop was built with an idea to sell products that has less harmful impact on environment.
+- Dazzle Cerashop is built with an idea to sell products that has less harmful impact on environment.
 
 - Fully responsive
 
 ## Features
 
 1. [Home](https://dazzle-cerashop.netlify.app/)
-2. [Login](https://dazzle-cerashop.netlify.app/pages/login.html)
-3. [Signup](https://dazzle-cerashop.netlify.app/pages/signup.html)
-4. [Forgot Password](https://dazzle-cerashop.netlify.app/pages/forgotpassword.html)
-5. [Profile Page](https://dazzle-cerashop.netlify.app/pages/profile.html)
-6. [Address Management](https://dazzle-cerashop.netlify.app/pages/profile.html)
-7. [Product Listing Page](https://dazzle-cerashop.netlify.app/pages/product.html)
-8. [Filters](https://dazzle-cerashop.netlify.app/pages/product.html)
-9. [Wishlist Management](https://dazzle-cerashop.netlify.app/pages/wishlist.html)
-10. [Cart Management](https://dazzle-cerashop.netlify.app/pages/cart.html)
+1. [Login](https://dazzle-cerashop.netlify.app/pages/login.html)
+1. [Signup](https://dazzle-cerashop.netlify.app/pages/signup.html)
+1. [Forgot Password](https://dazzle-cerashop.netlify.app/pages/forgotpassword.html)
+1. [Profile Page](https://dazzle-cerashop.netlify.app/pages/profile.html)
+1. [Address Management](https://dazzle-cerashop.netlify.app/pages/profile.html)
+1. [Product Listing Page](https://dazzle-cerashop.netlify.app/pages/product.html)
+1. [Filters](https://dazzle-cerashop.netlify.app/pages/product.html)
+1. [Single Product Page](https://dazzle-cerashop.netlify.app/pages/singleproduct.html)
+1. [Wishlist Management](https://dazzle-cerashop.netlify.app/pages/wishlist.html)
+1. [Cart Management](https://dazzle-cerashop.netlify.app/pages/cart.html)
+
+### Landing Page
+
+![Cerashop Landing Demo](/assets/gifs/cerashop_landing_gif.gif)
+
+### Authentication
+
+![Cerashop Landing Demo](/assets/gifs/cerashop_auth_gif.gif)
+
+### Product listing and Single Product Page
+
+![Cerashop Product Demo](/assets/gifs/cerashop_product_gif.gif)
+
+### Profile, Address, Wishlist and Cart Management
+
+![Cerashop Mgmt Demo](/assets/gifs/cerashop_pwc_gif.gif)
+
+## Mobile Responsive
+
+![Cerashop Mobile Demo](/assets/gifs/cerashop_mobile_gif.gif)
 
 ## Connect
 
