@@ -104,6 +104,16 @@
   transform: scaleY(1);
 }
 
+/* ---------------combo offers--------------- */
+
+
+
+@media screen and (min-width: 1280px) {
+  .combo-offers .grid-container {
+    width: 80%;
+  }
+}
+
 @media screen and (max-width: 420px) {
   .category {
     gap: 1rem;

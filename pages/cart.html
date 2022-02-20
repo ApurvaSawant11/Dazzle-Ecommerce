@@ -87,7 +87,7 @@
         <div class="cart-header">
           <span class="cart-header-item pb-1">Product</span>
           <span class="cart-header-item pb-1 text-center">Quantity</span>
-          <span class="cart-header-item pb-1 text-right">Total</span>
+          <span class="cart-header-item pb-1 text-right">SubTotal</span>
         </div>
         <div class="cart-item">
           <div class="card-horizontal">
@@ -104,16 +104,23 @@
                 </div>
               </div>
             </div>
+            <div class="cart-actions_mobile mt-1">
+              <div class="quantity-selector">
+                <button class="quantity-btn">-</button>
+                <input class="quantity-input" type="text" value="2" />
+                <button class="quantity-btn">+</button>
+              </div>
+              <div class="final-price fw-700">Rs. 849</div>
+            </div>
           </div>
-          <div class="cart-actions text-center m-auto">
+          <div class="cart-actions cart_web">
             <div class="quantity-selector m-auto">
               <button class="quantity-btn">-</button>
-              <input class="quantity-input" type="text" value="1" />
+              <input class="quantity-input" type="text" value="2" />
               <button class="quantity-btn">+</button>
             </div>
           </div>
-  
-          <div class="final-price text-right">Rs. 849</div>
+          <div class="final-price cart_web text-right fw-700">Rs. 849</div>
         </div>
   
         <div class="cart-item">
@@ -133,15 +140,24 @@
                 </div>
               </div>
             </div>
+            <div class="cart-actions_mobile mt-1">
+              <div class="quantity-selector">
+                <button class="quantity-btn">-</button>
+                <input class="quantity-input" type="text" value="2" />
+                <button class="quantity-btn">+</button>
+              </div>
+              <div class="final-price fw-700">Rs. 1698</div>
+            </div>
           </div>
-          <div class="cart-actions">
+
+          <div class="cart-actions cart_web">
             <div class="quantity-selector m-auto">
               <button class="quantity-btn">-</button>
               <input class="quantity-input" type="text" value="2" />
               <button class="quantity-btn">+</button>
             </div>
           </div>
-          <div class="final-price text-right">Rs. 1698</div>
+          <div class="final-price cart_web text-right fw-700">Rs. 1698</div>
         </div>
       </main>
       <div class="cart-footer m-auto">
@@ -186,7 +202,7 @@
             <span>Convenience Fee:</span>
             <span class="price-detail-value secondary-text fw-700">FREE</span>
           </div>
-          <div class="fw-700">
+          <div class="fw-700 fw-700 border-top-1 text-md pt-0p5">
             <span>Total Amount: </span
             ><span class="price-detail-value">Rs. 1,547</span>
           </div>
