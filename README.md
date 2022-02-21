@@ -50,7 +50,7 @@ Dazzle Cerashop is an E-commerce website which sells ceramic products.
 
 ## Mobile Responsive
 
-![Cerashop Mobile Demo](/assets/gifs/cerashop_mobile_gif.gif)
+<div align="center"><img src="/assets/gifs/cerashop_mobile_gif.gif" width="325" height="700"></div>
 
 ## Connect
 
