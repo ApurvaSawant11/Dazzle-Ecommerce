@@ -14,7 +14,7 @@ Dazzle Cerashop is an E-commerce website which sells ceramic products.
 
 ## Introduction
 
-- Dazzle Cerashop is built with an idea to sell products that has less harmful impact on environment.
+- Dazzle Cerashop is built with an idea to sell products that have less harmful impact on environment.
 
 - Fully responsive
 
