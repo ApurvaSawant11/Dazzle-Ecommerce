@@ -29,6 +29,7 @@ aside .active {
 .address-title {
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 
 .edit-btn,
